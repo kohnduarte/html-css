@@ -5,4 +5,4 @@
 
  Estou aprendendo a atualizar os meus repositórios (local e remoto)
 
- <a href="https://kohnduarte.github.io/html-css/exercicios/ex001/">Meu primeiro exercício</a>
+ <a href="https://kohnduarte.github.io/html-css/exercicios/ex001/" target="_blank">Meu primeiro exercício</a>
