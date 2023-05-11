@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'heading';
+    src: url('../fonts/The Centurion.woff') format('woff'), url('../fonts/The Centurion.ttf') format('truetype'), url('../fonts/The Centurion.otf') format('opentype');
+}
+
+h1 {
+    font: 2.5em 'heading';
+    font-weight: normal;
+    text-align: center;
+    /*visibility: hidden;*/
+    /*display: none;*/
+    
+}
+
+/* os pseudoelementos '::before' e '::after' permitem inserir um conteúdo antes e depois do conteúdo de um elemento. O conteúdo é inserido através da propriedade 'content' */
+h1::before {
+    content: '\00bb   ';
+}
+
+h1::after {
+    content: '   \00ab';
+}
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+    font: 1em 'Lato';
+    margin: 0;
+}
+
+p::first-letter {
+    font: 3em 'Dancing Script';
+}
+
+::selection {
+    color: #fff;
+    background-color: pink;
+}
+
+nav {
+    
+    width: 544px;
+    margin: auto;
+}
+
+div {
+    width: 544px;
+    margin: 34px auto;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+li {
+    display: inline;
+    font: 1.25em Georgia;
+    margin-right: 30px;
+    
+}
+
+a {
+    text-decoration: none;
+    box-shadow: 0px 0px 5px 0px;
+    text-shadow: 1px 1px 0px #fff, 2px 2px 0px #00000070;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+a:link {
+    color:black;
+}
+
+a:visited {
+    color: rgb(157, 71, 71);
+}
+
+a:focus {
+    text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: burlywood;
+}
+
+a:active {
+    background-color: blueviolet;
+}
+
+::marker {
+    color: #0f0;
+}
+
+/* Grouping tags: contêiners com valor semântico 
+
+'header' 'article' 'section' 'aside' 'nav' 'footer' 
+
+*/

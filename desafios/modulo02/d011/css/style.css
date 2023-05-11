@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body {
+    background: url('../images/astronauta.png') no-repeat fixed center, url('../images/espaco.jpg') no-repeat fixed center/cover;
+
+   
+
+   /*background: url('../images/espaco.jpg') no-repeat cover fixed; não consigo definir 'background-size' na propriedade shorthand 'background', talvez haja alguma ordem a ser respeitada*/
+
+   /* após muita pesquisa descobri que, em uma propriedade abreviada 'background', 'background-size' vem após 'background-position' separado por uma '/': 'background-position/background-size'  */
+}
+
+
+
+
+

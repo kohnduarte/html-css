@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            background-color: #e5e3e3;
+            padding: 10px;
+            width: 300px;
+            border: 5px solid blue;
+            /*box-sizing: content-box;*/
+            
+        }
+
+        #test {
+            width: 300px;
+            margin: auto;
+            
+        }
+
+        #testdois {
+            display: block;
+            margin: auto;
+            /*width: 90%;
+            max-width: 800px;*/
+        }
+
+        
+
+        #tres {
+            display: block;
+            margin: auto;
+            /*width: 100%;
+            max-width: 800px;*/
+            
+        }
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    
+    <picture>
+        <source id="src" media="(max-width: 850px)" srcset="dan-droids-pq.png" type="image/png" width="434" height="510">
+        <img id="testdois" src="dan-droids.png" alt="" width="800" height="266">
+    </picture>
+
+    <div id="test"><img src="./bugdroid.png" alt="Bugdroid"></div>
+
+    <br><br><br><br><br><br>
+
+    <picture>
+        <source media="(max-width: 850px)" srcset="irina-blok-pq.jpg" type="image/jpeg">
+        <img id="tres" src="irina-blok.jpg" alt="">
+    </picture>
+
+
+
+</body>
+</html>

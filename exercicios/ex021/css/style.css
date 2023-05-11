@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'heading';
+    src: url('../fonts/The Centurion.woff') format('woff'), url('../fonts/The Centurion.otf') format('opentype'), url('../fonts/The Centurion.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+h1 {
+    font-family: 'heading', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    width: 313px;
+    font-size: 2.5em;
+    background-color: aquamarine;
+    text-align: center;
+    margin: 26.8px auto;
+    padding: 17px;
+    border: 8px solid blue;
+}
+
+a {
+    display: inline;
+    visibility: hidden;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+}
+
+p {
+    font-family: 'Dancing Script', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4em;
+    text-indent: 40px;
+    text-align: justify;
+}
+
+p:hover > a {
+    visibility: visible;
+    text-transform: uppercase;
+}
+
+a:focus, a:hover {
+    color: red;
+    background-color: yellow;
+}
+
+p::selection, a::selection {
+    color: orange;
+    background-color: pink;
+}
+

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+            /* Valores das especificidades dos seletores */
+
+            /* CSS inline tem especificidade = 1000 */
+
+            /* A única coisa que vence o CSS inline é ' !important ' */
+
+p { /* 1 */
+    text-align: justify;
+    text-indent: 1.5em;
+}
+
+h1#linE {  /* 101 */
+text-decoration: underline;
+color: rgb(255, 0, 191);
+} /* em um CSS interno, o 'h1' não seria necessário, já que essa id é única naquele documento. Porém, estamos em uma folha externa que será vinculada a vários documentos. Cada um desses documentos pode ter um elemento com essa id. */
+
+
+h1 { /* 1 */
+    text-align: center;
+    color: blue;
+}
+
+.hyper { /* 10 */
+    text-indent: 0em;
+}

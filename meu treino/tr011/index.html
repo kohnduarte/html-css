@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Âncoras</title>
+    <style>
+        ul {
+            font-weight:bold;
+        }
+        ul ul {
+            font-weight:normal;
+        }
+        #idandclass {
+            color:blueviolet;
+        }
+        li.special {
+            color:gold;
+        }
+        article em {
+            color:brown;
+        }
+    </style>
+</head>
+<body>
+   <h1 class="special">Testando Âncoras</h1>
+   <p class="special">Testes com âncoras para outras páginas</p> 
+   <a href="../../desafios/d004/index.html#face" target="_blank">Meus emojis de carinha favoritos</a>
+   <p><a href="https://html.spec.whatwg.org/multipage/#toc-semantics" target="_blank">Tags HTML</a></p>
+   <p><a href="mailto:kohnduarte@gmail.com">Mande-me um e-mail!</a></p>
+   <p>&quot;kohnduarte@gmail.com&quot;</p>
+
+   <h2 id="idandclass">A diferença entre os atributos <em>id</em> e <em>class</em></h2>
+   <h3 style="text-decoration:underline;">id</h3>
+   <ul type="square">
+    <li class="special">o atributo <em>id</em> especifica uma <em>id</em> exclusiva para uma tag</li>
+    <li>o valor do atributo <em>id</em> não pode se repetir na mesma página</li>
+    <li>o valor não pode ter espaços</li>
+    <li>o valor do atributo <em>id</em> diferencia maiúsculas de minúsculas</li>
+    <li>o atributo <em>id</em> serve para:</li>
+        <ul>
+        <li class="special">criar uma área que pode ser acessada através de um hiperlink</li>
+        <li>estilizar com <abbr title="Cascading Style Sheets">CSS</abbr></li>
+        <li title="Linguagem de Programação">JavaScript</li>
+        </ul>
+   </ul>
+   <h3 style="text-decoration:underline;">Class</h3>
+   <ul type="square">
+    <li class="special">o atributo <em>class</em> especifica uma ou mais classes para uma tag</li>
+    <li>várias tags podem compartilhar a mesma classe <br> (ao contrário da <em>id</em>, que só pode haver 1 com aquele nome em cada página)</li>
+    <li>o atributo <em>class</em> pode ser usado em <strong>qualquer</strong> tag</li>
+    <li class="special">o valor do atributo <em>class</em> diferencia maiúsculas de minúsculas</li>
+    <li>uma tag pode ter mais de uma classe (&lt;h2 class=&quot;city main&quot;&gt;) <br><em>city</em> e <em>main</em> são 2 classes e cada uma terá seu seletor (.city e .main)</li>
+    <li>seletores que se referem a classes começam com um ponto</li>
+    <li class="special">tags diferentes podem possuir a mesma classe e compartilharão o mesmo estilo <br> (&lt;h2 class="city"&gt; e &lt;p class="city"&gt;)</li>
+    
+</ul>
+<article>
+ <h1>Teste de gerações</h1>
+ <p>Lorem ipsum dolor, sit amet consectetur adipisicing <em>elit</em>. Cupiditate fuga, minus facere veniam nulla nisi illum <em>architecto</em> sapiente at quos quis vel <em>natus</em>! Iure tempora at quaerat officia provident possimus!</p>
+</article>
+
+</body>
+</html>

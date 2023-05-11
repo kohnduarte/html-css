@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+body {
+    font-family: 'Cutive Mono', 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-weight: normal;
+    
+}
+
+p {
+    background-color: lightgray;
+    width: 50px;
+    height: 50px;
+    margin-bottom: -16px;
+    padding-top: 16px;
+    text-align: center;
+}
+
+p:hover {
+    background-color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    color: #FFF;
+}

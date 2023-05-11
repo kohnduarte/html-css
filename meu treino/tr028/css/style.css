@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100%;
+    background-image: linear-gradient(to right, #fff, #c0bebe);
+}
+
+header {
+    background-color: rgb(238, 234, 234);
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    text-decoration: underline;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    display: inline;
+    margin-right: -1px;
+}
+
+li.seta::after {
+    content: '   ↔';
+    color: brown;
+}
+
+main {
+    background-color: rgb(204, 201, 201);
+    height: 508px;
+}
+
+section {
+    /*background-color: rgb(187, 249, 249);*/
+    width: 500px;
+    margin: 10px;
+}
+
+.artum {
+    background-color: bisque;
+    border-radius: 5px;
+    padding: 27px;
+    height: 143px ;
+}
+
+.artum > h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.artum > p {
+    margin: 0;
+    text-align: justify;
+    text-indent: 10px;
+    margin-top: 45px;
+}
+
+.artdois {
+    background-color: blueviolet;
+    padding: 0px;
+    height: 272px;
+    box-sizing: border-box;
+}
+
+.artdois > h2 {
+    padding: 27px;
+    text-align: center;
+}
+
+.artdois > p {
+    padding: 27px;
+    text-align: justify;
+    text-indent: 10px;
+    margin-top: -24px;
+    
+}
+
+#float {
+    width: 200px;
+    background-color: blanchedalmond;
+    float: right;
+    margin-top: -493px;
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin-top: 9px;
+}
+
+#aolado {
+    width: 100px;
+    background-color: aqua;
+    margin-left: 391px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: rgb(137, 212, 62);
+}
+
+a:focus {
+    color: pink;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color:black;
+    background-color: white;
+}
+
+::selection {
+    background-color: white;
+    color: pink;
+}
+
+
+
+
+

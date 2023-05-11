@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+body {
+    font-family: 'Cutive Mono', 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+div {
+    display: inline-block;
+    background-color: lightgray;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 1px;
+    
+}
+
+div:hover { /* hover = pairar, perambular */
+    background-color: #000;
+    color: #FFF;
+    
+
+}
+
+.div-02 {
+    /*display: none;*/
+    visibility: visible;
+}
+
+p {
+    height: 500px;
+    border: dotted;
+    width: 500px;
+}
+
+strong { /* Não é possível definir altura e largura para um elemento embutido (inline), mas é possível modificar o tipo de exibição padrão dele para 'block' ou 'inline-block'. Aí sim, daria pra modificar altura e largura. */
+    height: 220px;
+    width: 250px;
+    /*margin: 100px;*/
+}

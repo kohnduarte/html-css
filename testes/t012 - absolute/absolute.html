@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div {
+            background-color: blanchedalmond;
+            max-width: 700px;
+            
+            /*box-sizing: content-box;*/
+            margin: auto;
+            
+            padding-bottom: 58%;
+            position: relative; /* deixando de lado o deslocamento, a coisa importante aqui é tornar esse elemento um elemento posicionado */
+        }
+
+        iframe {
+            position: absolute; /* um elemento com esse tipo de posicionamento é removido do fluxo normal do documento. */
+            width: 100%;
+            height: 100%;
+            
+            /*top: 5%;
+            left: 5%;*/
+        }
+
+        p { font-family: Georgia, 'Times New Roman', Times, serif;
+            /*margin-top: 350px;*/
+            font-weight: bold;
+        }
+
+        #first {
+            padding: 0;
+            /*position: static;*/
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="first">
+        <div class="sec">
+        
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eOlZJDNKLCw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        
+        </div>
+    </div>
+
+    <aside>
+        <p>Eu não posso especificar uma altura fixa!</p>
+    </aside>
+    
+
+</body>
+
+</html>

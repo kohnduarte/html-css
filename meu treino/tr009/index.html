@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas de descrição</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <style>
+        dd + dt {
+            margin-top: 1em;
+        }
+
+        dt {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        dl dl dt {
+            font-weight: normal;
+            text-transform: none;
+        }
+
+    </style>
+</head>
+<body>
+  <h1 style="color: rgb(15, 33, 87);text-decoration: underline;">Minhas refeições</h1>  
+  <ol type="1">
+    <li>Café da manhã</li>
+        <ul type="disc">
+            <li>pão com ovo</li>
+                <ul>
+                    <li>pão</li>
+                    <li>ovo</li>
+                </ul>
+            <li>maçã</li>
+            <li>laranja</li>
+        </ul>
+    <li>Almoço</li>
+        <ul type="disc">
+            <li>arroz com feijão</li>
+                <ul>
+                    <li>arroz</li>
+                    <li>feijão</li>
+                </ul>
+            <li>carne</li>
+            <li style="font-weight:bold; text-transform:uppercase;text-decoration: underline;color: green;">legumes</li>
+        </ul>
+    <li>Lanche</li>
+        <ul type="disc">
+            <li>pão com ovo</li>
+                <ul>
+                    <li>pão</li>
+                    <li>ovo</li>
+                </ul>
+            <li>figo</li>
+            <li>maçã</li>
+            <li style="text-transform:uppercase;font-weight:bold;text-decoration:underline;color:green;">legumes</li>
+        </ul>
+    <li>Janta</li>
+        <ul type="disc">
+            <li>arroz</li>
+            <li>frango</li>
+            <li style="text-transform:uppercase;font-weight:bold;text-decoration:underline;color:green;">legumes</li>
+            <li>mamão</li>
+        </ul>
+  </ol>
+  <h1>Lista de Descrição</h1>
+  <dl>
+    <dt>Termo</dt>
+    <dd>Descrição</dd>
+    <dt>Termo</dt>
+    <dd>Descrição</dd>
+    <dt>Termo</dt>
+    <dd>Descrição</dd>
+  </dl>
+<hr>
+  <dl>
+    <dt>bogeyman</dt>
+    <dt>boogeyman</dt>
+    <dd>Uma ciatura mítica que fica embaixo da cama de crianças pequenas.</dd>
+    
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+  </dl>
+
+  <dl>
+    <dt>Diretor</dt>
+    <dd>Fulano</dd>
+
+    <dt>Escritores</dt>
+    <dd>Fulano</dd>
+    <dd>Ciclano</dd>
+    <dd>Beltrano</dd>
+
+    <dt>Elenco</dt>
+    <dd>
+        <dl>
+            <dt>Ator</dt>
+            <dd>Pers</dd>
+
+            <dt>Ator</dt>
+            <dd>Pers</dd>
+
+            <dt>Ator</dt>
+            <dd>Pers</dd>
+
+            <dt>Ator</dt>
+            <dd>Pers</dd>
+        </dl>
+    </dd>
+  </dl>
+
+
+
+
+
+</body>
+</html>

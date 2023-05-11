@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        ul {
+            /*list-style: none;*/
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Pseudo-classes para links: ':link' ':visited' ':focus' ':hover' ':active' */
+
+        a:link {
+            color: darkgoldenrod;
+        }
+
+        a:visited {
+            color: darkmagenta;
+        }
+
+        a:focus {
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            background-color: yellow;
+        }
+
+        .special::after {
+            content: '    ('attr(href)')'
+        }
+
+        a::after {
+            content: '   [link]';
+            color: cornflowerblue; 
+            
+        }
+
+        a::before {
+            content:  ' \20AA      ';
+            color: chartreuse;
+        }
+
+        p {
+            text-indent: 20px;
+            text-align: justify;
+        }
+
+        p::first-letter {
+            font: 2em 'Georgia', serif;
+            
+        }
+
+        p::after {
+            content: '   \2122';
+            color:rgb(165, 157, 42);
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul type="square">
+        <li><a href="https://www.google.com" target="_blank" rel="external">Google (https://www.google.com)</a></li>
+        <li><a class="special" href="https://youtube.com" target="_blank" rel="external">Youtube</a></li>
+        <li><a href="https://www.netflix.com/br/" target="_blank" rel="external">Netflix</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, aperiam error enim quis, impedit illo eaque rem mollitia inventore voluptatum facilis consectetur sit pariatur consequuntur est velit! Enim, mollitia Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tempore esse ipsam maiores? Totam mollitia quaerat accusamus possimus harum ratione dicta, vel, dolores soluta consequatur corrupti, omnis pariatur ex aut.</p>
+</body>
+</html>

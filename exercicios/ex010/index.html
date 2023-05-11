@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        h1 {
+            text-align:center;
+            text-decoration:underline;
+            color:rgb(41, 125, 125);
+        }
+
+        p{
+            font-weight:normal;
+            text-transform:none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Usando links externos</h1> <!-- links que apontam para outros sites, fora do meu -->
+    <p style="text-transform:none;">Você pode acessar o <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">meu repositório público no GitHub</a></p>
+    <p style="font-weight:normal;">Leia <a href="https://sport.es/es" target="_blank" rel="external" hreflang="es">notícias sobre o campeonato Espanhol!</a></p>
+
+    <h1>Usando links internos</h1>
+    <p style="font-weight:normal; text-transform:none;"><a href="pag002.html" target="_self" rel="next">Clique aqui</a> para ser levado(a) para a página 2 do meu site.</p>
+
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a>.</p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="./livro/meulivro.pdf" download="meulivro.pdf" target="_blank" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+        <li><a href="cupom_pesquisa.jpg" download="cupom_pesquisa.jpg" type="">Foto</a></li>
+        <li><a href="livro/meulivro.zip">ziiiip</a></li>
+    </ul>
+
+
+</body>
+</html>

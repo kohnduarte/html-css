@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando no domingão</title>
+    <link rel="shortcut icon" href="../../exercicios/ex004/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens Alternativas</h1>
+    <p>Um site é acessado através de diferentes dispositivos, que possuem diferentes tamanhos de tela. Quando se fala em tamanho de tela, é mais especificamente sobre a largura. É bom ter versões alternativas da mesma imagem. A melhor versão será escolhida pelo navegador do visitante levando em consideração a largara de sua tela.</p>
+
+    <picture>
+        <source media="(max-width:550px)" srcset="imagens/barcelona-300.jpg" type="image/jpg">
+        <source media="(max-width:700px)" srcset="imagens/barcelona-500.jpg" type="image/jpg">
+        <source media="(max-width:850px)" srcset="imagens/barcelona-650.jpg" type="image/jpg">
+        <source media="(max-width:1050px)" srcset="imagens/barcelona-800.jpg">
+        <img src="imagens/barcelona-1000.jpg" alt="cidade de Barcelona">
+    </picture>
+</body>
+</html>

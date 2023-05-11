@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+* { /* seletor universal */
+   font-family: Arial, Helvetica, sans-serif; 
+}
+
+.shadows {
+    text-align: center;
+    text-shadow: -2px -2px 5px;
+  /*  border: solid;*/
+    padding: 5px 0;
+    margin: 0 290px 30px;
+    box-shadow: -2px -2px 8px -1px;
+    border-radius: 5px 20px;
+}
+
+body {
+  /*  background-image: url("https://dogscare.net/wp-content/uploads/2018/02/Golden-Tapete_Frente-267x400.png"), linear-gradient(to right, #fff 30%, #EDE3E9, #E6E4CE);
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+    background: url("https://dogscare.net/wp-content/uploads/2018/02/Golden-Tapete_Frente-267x400.png") fixed no-repeat bottom left, linear-gradient(to right, #fff 30%, #EDE3E9, #E6E4CE);
+    /* a propriedade background servindo como 4 propriedades! (background-image, background-attachment, background-repeat e background-position) */
+}
+
+p {
+    text-align: justify;
+    border-radius: 5px 20px;
+   /* box-shadow: -2px -2px 8px -1px;*/
+    width: 70%;
+    box-shadow: 0 0 10px 5px;
+    padding: 5px;
+    margin: 15px auto;
+    
+}
+
+.lotsof {
+    
+  /*  margin: 0 290px 30px;*/
+    text-align: center;
+    border: solid rgb(80, 9, 9);
+    box-shadow: -2px -2px 8px 2px red, -4px -4px 8px 2px green, -6px -6px 8px 2px blue;
+    padding: 5px 5px;
+    text-shadow: -2px -2px 5px, -4px -4px 5px rgb(162, 162, 128);
+    width: 70%;
+    margin: 50px auto;
+}
+
+.semdes {
+    text-align: center;
+    text-shadow: 0 0 5px red;
+
+}
+
+.caixa {
+    text-align: center;
+    border: solid;
+    box-shadow: 0px 0 10px 5px;
+}
+

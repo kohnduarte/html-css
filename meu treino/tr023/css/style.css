@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'crimson';
+    src: url('../fonts/Crimson-Roman.otf') format('opentype');
+    font-weight: normal; /* essa linha é mesmo necessária? */
+    font-style: normal; /* essa linha é mesmo necessária? */
+}
+
+@font-face {
+    font-family: 'crimson-ita';
+    src: url('../fonts/Crimson-Italic.otf') format('opentype');
+    font-style: italic; /* essa linha é mesmo necessária? */
+    
+}
+
+@font-face {
+    font-family: 'crimson-bold';
+    src: url('../fonts/Crimson-Bold.otf') format('opentype');
+    font-weight: bold; /* essa linha é mesmo necessária? */
+}
+
+@font-face {
+    font-family: 'oldlondon';
+    src: url('../fonts/OldLondon.ttf') format('truetype'), url('../fonts/Olondon_.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'centurion';
+    src: url('../fonts/The Centurion.otf') format('opentype'), url('../fonts/The Centurion.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'beauty';
+    src: url('../fonts/BeautyRegular.ttf') format('truetype'), url('../fonts/Beauty.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(to right,#EBEBE9, #A37551, #9f5e35);
+}
+
+h1 {
+    font-weight: normal;
+}
+
+p {
+    font-family: 'crimson', 'Times New Roman', Times, serif; 
+    text-align: justify;
+    text-indent: 2em;
+}
+
+em {
+    font-family: 'crimson-ita';
+    font-style: normal;
+}
+
+strong {
+    font-family: 'crimson-bold';
+    font-weight: normal;
+}
+
+h2.old {
+    text-align: center;
+    font: 3em 'oldlondon', 'Times New Roman', Times, serif;
+}
+
+.cent {
+    text-align: center;
+    font: 4em 'centurion', 'Times New Roman', Times, serif; 
+}
+
+#unique {
+    font: 1.5em 'beauty', 'Times New Roman', Times, serif; 
+}

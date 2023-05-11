@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+h1 {
+    text-align:center; /* comentário */
+   /* text-decoration: underline; */
+}
+
+body {
+    background-color: beige; /* comentário */
+}
+
+/* h2 {
+    text-transform:uppercase;
+    
+} */
+
+a {
+    text-transform: uppercase; /* comentário */
+    text-decoration: none; 
+} /* comentário após a regra de estilo */

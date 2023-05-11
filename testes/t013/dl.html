@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas de Descrição</title>
+    <style>
+        h1 {
+            text-decoration: underline wavy;
+        }
+
+        dt {
+            /*font-weight: bold;
+            font-size: 1.1em;*/
+            font: bold 1.1em Georgia,serif;
+            text-transform: uppercase;
+        }
+
+        dd {
+            margin-bottom: 20px;
+        }
+
+        dd.nomarg {
+            margin-bottom: 0;
+        }
+
+        .mtop {
+            margin-top: 20px;
+        }
+
+        dd dt {
+            font-weight: normal;
+            text-transform: none;
+        }
+
+        dd dd {
+            margin-bottom: 10px;
+        }
+
+        .mtop2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Django Unchained</h1>
+    <dl>
+        <dt>Diretor</dt>
+        <dd>Quentin Tarantino</dd>
+
+        <dt>Música</dt>
+        <dd>Ennio Morricone
+        </dd>
+
+        <dt>Data de Lançamento</dt>
+        <dd>18/01/2013</dd>
+
+        <dt>Bilheteria</dt>
+        <dd>426 milhões USD</dd>
+
+        <dt>Distribuidores</dt>
+        <dd class="nomarg">Sony Pictures Entertainment</dd>
+        <dd class="nomarg">The Weinstein Company</dd>
+        <dd class="nomarg">Columbia Pictures</dd>
+
+        <!-- Um termo pode ter mais de uma descrição -->
+
+        <!-- Uma mesma descrição pode ter mais de um termo, como, por exemplo, quando o termo possui mais de uma forma de escrita. Nesses casos, cada forma de escrita será um termo -->
+
+        <dt class="mtop">Elenco</dt>
+        <dd>
+            <dl class="mtop2">
+                <dt>C. Waltz</dt>
+                <dd>DR. King Schultz</dd>
+
+                <dt>Jamie Foxx</dt>
+                <dd>Django</dd>
+
+                <dt>Samuel L. Jackson</dt>
+                <dd>Stephen</dd>
+
+                <dt>Leonardo DiCaprio</dt>
+                <dd>Calvin Candie</dd>
+
+                <dt>Kerry Washington</dt>
+                <dd>Broomhilda</dd>
+            </dl>
+        </dd>
+    </dl>
+</body>
+</html>

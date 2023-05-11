@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'heading';
+    src: url('../fonts/The Centurion.woff') format('woff'), url('../fonts/The Centurion.woff2') format('woff2'), url('../fonts/The Centurion.otf') format('opentype'), url('../fonts/The Centurion.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+body {
+    display: block;
+    font-size: 100%;
+    font-family: 'Dancing Script', cursive;
+    background-color: rgb(189, 244, 189);
+}
+
+h1 {
+    font-family: 'heading', Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: normal;
+    font-size: 2.5em;
+}
+
+p {
+    width: 100%;
+    text-align: justify;
+}
+
+div p {
+    text-indent: 20px;
+}
+
+img {
+    display: block;
+    visibility: hidden;
+    
+}
+
+span {
+    color: limegreen;
+}
+
+div {
+    margin: 20px;
+    padding: 30px;
+    background: url('https://images.rappi.com.br/products/2089934229-1534513059.png?d=128x128&e=webp&q=70') no-repeat fixed 50% 10%,linear-gradient(to right, #fff, #f6d7d7);
+}
+
+div > h1:first-child { /* A pseudo-classe 'first-child'. Nessa regra de estilo, as modificações serão aplicadas a todos os H1 que forem o primeiro filho de qualquer elemento. */
+    /*color: #F00;*/
+}
+
+div p::first-line {
+    color: red;
+}
+
+div p::first-letter {
+    color: #00F;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link { /* A pseudo-classe ':link' vai formatar os links ainda não visitados */
+    color: #0F0;
+}
+
+a:visited { /* A pseudo-classe ':visited' para modificar os links já visitados */
+    color:aqua;
+}
+
+a:focus { /* A pseudo-classe 'focus' para personalizar links quando forem selecionados com o teclado (tab) */
+    color:cadetblue;
+}
+
+a:hover { /* Formatações aplicadas ao passar o mouse em cima */
+    color:rgb(58, 127, 127);
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+a:active { /* A pseudo-classe 'active' modifica a aparência de um link quando é ativado */
+color:deeppink;                                      
+}
+

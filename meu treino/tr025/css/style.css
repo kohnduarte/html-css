@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'heading';
+    src: url('../fonts/The Centurion.woff') format('woff'), url('../fonts/The Centurion.otf') format('opentype'), url('../fonts/The Centurion.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'corpo';
+    src: url('../fonts/Beauty.otf') format('opentype'), url('../fonts/BeautyRegular.ttf') format('truetype');
+}
+
+body {
+    font-size: 150%;
+    font-family: 'corpo', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-family: 'heading', Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: normal;
+    font-size: 2.5em;
+}
+
+ul li::marker {
+    color: rgb(246, 31, 178);
+}
+
+ol li::marker {
+    color:chartreuse;
+}
+
+/* o pseudo-elemento '::marker' permite estilizar os marcadores dos itens de uma lista */
+
+li::selection {
+    color: red;
+    background-color: yellow;
+}
+
+/* quando um conteúdo é selecionado, por padrão, a letra fica branca e o fundo fica azul. O pseudo-elemento '::selection' permite mudar isso */
+
+/* o pseudo-elemento '::selection' define a aparência de uma parte do conteúdo de um elemento que será selecionada por um visitante */

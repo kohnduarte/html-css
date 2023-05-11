@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body = 16px, seus filhos herdam esse tamanho */
+        p {  
+            font-size: 10px;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        a {
+            font-size: 1.5em; /* 50% maior que o elem pai ou 50% maior que o atual dele mesmo, que ele herdou do pai? */
+        }
+
+        ol {
+            /*list-style-type: decimal;
+            list-style-position: inside;*/
+            list-style: none outside;
+            columns: 2;
+        }
+
+        ol > li {
+            background: url('./persicon.ico') no-repeat;
+            padding-left: 17px;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            font-size: 5px;
+        }
+
+        ul {
+            list-style-type: '\1F979\00A0';
+            columns: 2;
+        }
+
+        ul > li {
+            background: url('./01.ico') no-repeat;
+            padding-left: 18px;
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Lorem, ipsum dolor.</h1>
+    <article>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores necessitatibus temporibus rem perferendis! Fuga, labore quasi. Voluptas aut laboriosam ad quisquam harum possimus odio, qui nisi atque officia a. Illo!
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dicta aut eaque temporibus at nobis facilis maxime dolores autem vero cum vel, quaerat amet officiis, eum possimus quam <a href="">optio molestias atque culpa cupiditate odio neque</a>. Quam voluptatum ex nesciunt aspernatur consequuntur, libero nulla, nostrum aperiam natus dolore a sapiente esse!</p>
+    </article>
+
+    <ol>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Rem natus voluptatum numquam quo.</li>
+        <li value="2">Ratione illum hic quasi incidunt!</li>
+        <li>Quaerat, adipisci! Sed, ab! Eius.</li>
+        <li>Est earum molestiae perferendis aliquid!</li>
+        <li>Sequi recusandae aliquam ullam libero.</li>
+        <li>Possimus sapiente ut ipsam facilis!</li>
+        <li>Ipsam itaque rem quam corporis!</li>
+    </ol>
+
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Reprehenderit soluta omnis temporibus eveniet.</li>
+        <li>Repellendus possimus vel porro vero?</li>
+        <li>Amet dignissimos qui officia aut?</li>
+        <li>Blanditiis aliquam beatae similique aspernatur!</li>
+        <li>Magnam at enim nihil consequatur!</li>
+        <li>Adipisci totam voluptatibus reiciendis doloremque?</li>
+        <li>Explicabo unde cum maiores labore?</li>
+    </ul>
+</body>
+</html>

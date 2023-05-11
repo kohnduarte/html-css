@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .green {
+  line-height: 1.1;
+  border: solid limegreen;
+}
+
+.red {
+  line-height: 1.1em;
+  border: solid red;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.box {
+  width: 18em;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 15px;
+}
+
+/*.red h1 {
+    visibility: hidden;
+}
+
+div.red:hover h1 {
+    visibility: visible;
+}*/
+
+.alt {
+    line-height: 1.5em;
+}
+
+h2 {
+    background-image: linear-gradient(to right, #45e345, transparent);
+}
+
+h3 {
+    background-image: linear-gradient(to right, #6b6bcb, transparent);
+}
+
+h4 {
+    background-image: linear-gradient(to right, #cf3434, transparent);
+}
+
+    </style>
+</head>
+<body>
+    <div class="box green">
+  <h1>Avoid unexpected results by using unitless line-height.</h1>
+  Length and percentage line-heights have poor inheritance behavior.
+</div>
+
+<div class="box red">
+  <h1>Avoid unexpected results by using unitless line-height.</h1>
+  Length and percentage line-heights have poor inheritance behavior
+</div>
+<p class="alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore recusandae quia aperiam tempore saepe pariatur corporis vitae reprehenderit sequi! Recusandae, saepe sequi numquam veniam dolorem dolor ullam, dicta ducimus doloremque eius dolorum <strong>eveniet</strong> voluptatum neque soluta, consectetur fuga repellat impedit veritatis et quis laborum necessitatibus atque aliquam. <mark>Nisi autem quia odio qui, earum accusantium</mark> quis corrupti, cumque iusto, eaque soluta expedita incidunt <em>veritatis</em> at minima sint dicta beatae exercitationem aut suscipit ducimus eum error natus! Recusandae totam ipsa <em>tenetur laboriosam obcaecati dignissimos, ea praesentium illo suscipit animi, officia sequi</em> saepe consequuntur aperiam est debitis repellendus <strong>corrupti excepturi necessitatibus exercitationem repudiandae</strong>.</p>
+<h2>Lorem ipsum dolor sit amet</h2>
+
+<h3>Lorem ipsum dolor sit amet consectetur adipisicing</h3>
+
+<h4>Lorem ipsum dolor sit.</h4>
+</body>
+</html>

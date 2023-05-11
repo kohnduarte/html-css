@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100%;
+}
+
+header {
+    background-color: blanchedalmond;
+    padding: 1px 0px;
+    text-align: center;
+}
+
+header > h1 {
+    
+    text-decoration: underline;
+
+}
+
+nav > ul > li {
+    display: inline;
+    margin-right: 15px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ':link' ':visited' ':focus' ':hover' ':active' */
+
+a:visited {
+    color: rgb(40, 194, 40);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+a::before {
+    content: '\2022';
+}
+
+h1::selection {
+    color: white;
+    background-color: pink;
+}
+
+.nosem li::marker {
+    color: pink;
+    font-size: 10px;
+    
+}
+
+.nosem > li {
+    margin-left: -25px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carregando Áudio</title>
+    <link rel="shortcut icon" href="../../exercicios/ex004/favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" href="favicon.png">
+</head>
+<body>
+   <h1>Áudios</h1> 
+   <h2>Uma única fonte</h2> 
+   <audio src="./midia/oh-christmas-tree-dj-williams.mp3" controls preload="metadata"></audio>
+
+   <h2>Mais de uma fonte</h2>
+
+    <audio controls preload="metadata">
+     <source src="midia/it-was-a-time.mp3" type="audio/mpeg">
+     <source src="midia/it-was-a-time.ogg" type="audio/ogg">
+     <source src="midia/it-was-a-time.wav" type="audio/wav">
+
+     O seu navegador não suporta a tag &lt;audio&gt; 
+    
+    </audio>
+
+    <h2>Teste de download com arquivos mp3</h2>
+    <a href="midia/it-was-a-time.mp3" download="it-was-a-time.mp3" type="audio/mpeg"><img src="https://images.tcdn.com.br/img/img_prod/496409/guitarra_sx_sst_swamp_ash_strato_4787_1_1d383cee2bdad49293d02e8eb32cf6da.png" alt="foto de uma guitarra"></a>
+
+    
+<audio src="midia/it-was-a-time.mp3" controls preload="metadata"></audio>
+<p>
+<audio controls preload="none" autoplay muted loop>
+ <source src="midia/it-was-a-time.mp3" type="audio/mpeg">
+ <source src="midia/it-was-a-time.ogg" type="audio/ogg">
+ <source src="midia/it-was-a-time.wav" type="audio/wav">
+ 
+ Your browser does not support the audio element
+
+</audio>
+</p>
+
+
+</body>
+</html>

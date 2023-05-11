@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol {
+            list-style-type: upper-roman;
+        }
+
+        ol ol {
+            list-style-type: upper-alpha;
+        }
+
+        ol ol ol {
+            list-style-type: decimal;
+        }
+
+        li {
+            font-size: 1.2em;
+        }
+
+        li li {
+            font-size: 1em;
+            visibility: hidden;
+        }
+
+        /* display: none;
+           visibility: hidden; */
+
+        #intro:hover .intro {
+            visibility: visible;
+        }
+
+        #dev:hover .dev {
+            visibility: visible;
+        }
+
+        #clim:hover .clim {
+            visibility: visible;
+        }
+
+        #ult:hover .ult {
+            visibility: visible;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>The Great american Novel</h1>
+    <ol>
+        <li id="intro">Introduction
+            <ol>
+                <li class="intro">Boy's Childhood</li>
+                <li class="intro">Girl's Childhood</li>
+            </ol>
+        </li>
+        <li id="dev">Development
+            <ol>
+                <li class="dev">Boy meets Girl</li>
+                <li class="dev">Boy and Girl fall in love</li>
+                <li class="dev">Boy and Girl have fight</li>
+            </ol>
+        </li>
+        <li id="clim">Climax
+            <ol>
+                <li class="clim" id="ult">Boy gives girl ultimatum
+                    <ol>
+                        <li class="ult">Girl can't believe her ears</li>
+                        <li class="ult">Boy is indignant at Girl's indignance</li>
+                    </ol>
+                </li>
+                <li class="clim">Girl tells Boy to get lost</li>
+            </ol>
+        </li>
+        <li>Denouement</li>
+        <li>Epilogue</li>
+    </ol>
+    
+</body>
+</html>

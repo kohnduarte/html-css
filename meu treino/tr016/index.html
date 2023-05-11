@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 11</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        h2 {
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adaptando um site aos visitantes e seus diferentes navegadores e tamanhos de tela</h1>
+    <h2>Imagens</h2>
+    <picture title="Barcelona">
+        <source media="(max-width:550px)" srcset="imagens/barcelona-300.jpg" type="image/jpg">
+        <source media="(max-width:700px)" srcset="imagens/barcelona-500.jpg" type="image/jpg">
+        <source media="(max-width:850px)" srcset="imagens/barcelona-650.jpg" type="image/jpg">
+        <source media="(max-width:1050px)" srcset="imagens/barcelona-800.jpg" type="image/jpg">
+        <img src="imagens/barcelona-1000.jpg" alt="Cidade de Barcelona">
+    </picture> <br>
+    <small>A Sagrada Família, na cidade de Barcelona</small>
+
+    <h2>Áudios</h2>
+    <audio controls preload="metadata">
+        <source src="./midias/it-was-a-time.mp3" type="audio/mpeg">
+        <source src="./midias/it-was-a-time.ogg" type="audio/ogg">
+        <source src="./midias/it-was-a-time.wav" type="audio/wav">
+        Infelizmente, seu navegador não suporta a tag &lt;audio&gt;
+    </audio>
+</body>
+</html>

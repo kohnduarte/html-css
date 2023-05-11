@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Centurion';
+    src: url('../fonts/The Centurion.woff') format('woff'), url('../fonts/The Centurion.otf') format('opentype'), url('../fonts/The Centurion.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* a pseudo-classe ':root' representa o elemento raiz do documento. Em um documento HTML, o elemento raiz é o próprio elemento <html>. Serve para declarar variáveis CSS globais. */
+
+:root { /* = html {} */
+    --cor01: #1E6127;
+    --cor02: #29E642;
+    --cor03: #a9edb2;
+    --cor04: #36AD46;
+
+    --fonte-titulo: 'Centurion', Georgia, Times, serif;
+    --fonte-corpo: 'Alkatra', Georgia, Times, serif;
+    --fonte-destaque: 'Oswald', Georgia, Times, serif;
+}
+
+body {
+    background-color: var(--cor03);
+}
+
+h1, h2 {
+    color: var(--cor01);
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h2 {
+    border-bottom: solid var(--cor02);
+    font-size: 2em;
+}
+
+p {
+    font-family: var(--fonte-corpo);
+    color: var(--cor04);
+}
+
+.container {
+    color: ;
+    background-color: ;
+    padding: 15px;
+}
+
+button {
+    background-color: var(--cor02);
+    color: ;
+    border: ;
+    padding: 5px;
+}
+
+

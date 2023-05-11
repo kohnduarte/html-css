@@ -1,0 +1,121 @@
+@charset "UTF-8"; /* torna o documento compatível com caracteres especiais */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inspiration&display=swap');
+
+@font-face {
+    font-family: 'Centurion';
+    src: url('../fonts/The Centurion.woff') format('WOFF'), url('../fonts/The Centurion.otf') format('opentype'), url('../fonts/The Centurion.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* pseudo-classe ':root' representa o elemento raiz do documento. O elemento raiz de um documento HTML é o próprio elemento html. :root {} = html {} */
+
+/* serve para declarar variáveis CSS globais, que podem ser acessadas em qualquer parte do documento */
+
+:root {
+    --font-titulo: 'Centurion', Georgia, 'Times New Roman', Times, serif;
+    --font-corpo: 'Bebas Neue', Georgia, 'Times New Roman', Times, serif;
+    --cor01: #c3b6b6;
+    --cor02: #c7bebe;
+    --cor03: #1f921f;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font: normal normal 3em var(--font-titulo);
+    text-align: center;
+    background-color: var(--cor01);
+    margin-top: 0;
+    box-shadow: 0 0 10px 0 #0000007c;
+}
+
+h1::before {
+    content: '\1F334';
+}
+
+h1::after {
+    content: '\1F334';
+}
+
+p {
+    font: 1em/1.6 var(--font-corpo);
+    text-align: justify;
+    text-indent: 20px;
+    max-width: 800px;
+    margin: 16px auto;
+    /*line-height: 1.6;*/ /* apenas o número, sem unidade de medida. Dessa forma, os filhos desse elemento terão, cada um, sua altura da linha recalculada de acordo com o tamanho das suas fontes. */
+}
+
+p::first-letter {
+    font-size: 2em;
+}
+
+
+
+div {
+    background-color: var(--cor01);
+    max-width: 800px;
+    margin: auto;
+    position: relative; /* o elemento continua no fluxo do documento. Ele pode ser deslocado em relação a si mesmo através das propriedades 'top right left bottom'. Esse deslocamento não afeta a posição dos outros elementos e, como ele permanece no fluxo do documento, o espaço que ele ocupava originalmente é mantido. */
+    padding-bottom: 58%;
+}
+
+iframe {
+    position: absolute; /* o elemento é removido do fluxo do documento. Ele pode ser posicionado em relação ao seu ancestral posicionado mais próximo (se não houver um ancestral que não seja estático, o posicionamento é em relação a body. */
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+#prim {
+    padding: 10px;
+}
+
+/* quando uma largura ou altura, ou largura/altura máxima é especificada, por padrão, esse valor inclui apenas o conteúdo desse elemento (box-sizing: content-box;). Para que esse valor inclua conteúdo, padding e borda, é necessário alterar 'content-box' para 'border-box'  */
+
+ul {
+    columns: 2;
+    list-style-position: outside;
+    list-style-type: '\2764\00A0';
+    font-family: var(--font-corpo);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000;
+}
+
+a:focus {
+    color: var(--cor01);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--cor03);
+}
+
+a:active {
+    color:darkgoldenrod;
+}
+
+p::selection {
+    background-color: rgb(226, 155, 167);
+    color: greenyellow;
+}
+
+::marker {
+    color: #f00;
+}
+
+#ul {
+    max-width: 800px;
+    margin: auto;
+}

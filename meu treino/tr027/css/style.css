@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+
+@font-face {
+    font-family: 'heading';
+    src: url('../fonts/The Centurion.woff') format('woff'), url('../fonts/The Centurion.otf') format('opentype'), url('../fonts/The Centurion.ttf') format('truetype');
+}
+
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: 'Cutive Mono', 'Courier New', Courier, monospace;
+    background: linear-gradient(to right, #fff, #949393);
+}
+
+header {
+    text-align: center;
+    background-color: rgb(228, 226, 226);
+    padding: 1px 0px;;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header li {
+    display: inline-block;
+    margin-right: 40px;
+    box-shadow: 0px 0px 5px orangered;
+    padding: 3px;
+    
+}
+
+h1 {
+    font-family: 'heading', Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 2.5em;
+}
+
+h2 {
+    /*margin: 0px;*/
+}
+
+p {
+    /*text-align: justify;*/
+    text-indent: 20px;
+}
+
+article p {
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(214, 215, 215);
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: orangered;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+::selection {
+    color: #fff;
+    background-color: pink;
+}
