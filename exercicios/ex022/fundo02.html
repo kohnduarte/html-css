@@ -11,14 +11,50 @@
         }
 
         div {
+            display: inline-block;
             width: 300px;
             height: 300px;
             border: solid;
             background: url('./imagens/pattern002.png') no-repeat center;
         }
+
+        div#pos1:hover {
+            background-position: left bottom;
+        }
+
+        #pos2:hover {
+            background-position: top center;
+        }
+
+        div#pos3:hover {
+            background-position: right center;
+        }
+
+        #pos4:hover {
+            background-position: bottom center;
+        }
+
+        div#pos5:hover {
+            background-position: left center;
+        }
+
+        #pos6:hover {
+            background-position: right bottom;
+        }
+
+        div#pos7:hover {
+            background-position: right top;
+        }
     </style>
 </head>
 <body>
-    <div></div>
+    <div id="pos1"></div>
+    <div id="pos2"></div>
+    <div id="pos3"></div>
+    <div id="pos4"></div>
+    <div id="pos5"></div>
+    <div id="pos6"></div>
+    <div id="pos7"></div>
+    
 </body>
 </html>
