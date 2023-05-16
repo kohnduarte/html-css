@@ -1,2 +1,21 @@
 @charset "UTF-8";
 
+.boxrel {
+    height: 500px;
+    max-width: 700px;
+    margin: auto;
+    box-sizing: border-box;
+    background: purple url('../imagens/target001.png') center/contain no-repeat;
+    position: relative;
+}
+
+.boxabs {
+    width: 35%;
+    height: 35%;
+    background: rgba(255, 255, 0, 0.388) url('../imagens/target001.png') center/contain no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
