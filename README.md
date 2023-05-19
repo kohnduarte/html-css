@@ -3,4 +3,4 @@
 
  
 
- <img src="HTML5_Logo_256.png" alt=""> <img src ="css3 logo.png" alt="">
+ <img src="HTML5_Logo_256.png" alt="" title="HyperText Markup Language"> <img src ="css3 logo.png" alt="" title="Cascading Style Sheets">
