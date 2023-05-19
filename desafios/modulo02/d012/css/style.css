@@ -3,3 +3,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {            /* não entendi &darr; */
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+                  /* CABEÇALHO */
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    
+}
+
+header > h1 {
+    font-variant: small-caps;
+    margin-bottom: 5px;
+}
+
+header a, footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+
+                  /* SEÇÕES */
+
+section {
+    padding: 10vh 0 10vh 0;
+    line-height: 2;
+    padding-left: 2vw;
+}
+
+section.normal {
+    background-color: #fff;
+}
+
+section.img {
+    background-color: #353434;
+    color: #fff;
+}
+
+section.img > p {
+    background-color: #000;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+
+                  /* RODAPÉ */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
