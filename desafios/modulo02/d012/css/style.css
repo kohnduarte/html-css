@@ -60,12 +60,26 @@ section.normal {
 section.img {
     background-color: #353434;
     color: #fff;
+    box-shadow: 0px 0px 15px -2px inset #000;
+}
+
+section#img01 {
+    background: url('../imagens/background001.jpg') center right/cover fixed;
+}
+
+section#img02 {
+    background: url('../imagens/background002.jpg') center/cover fixed;
 }
 
 section.img > p {
-    background-color: #000;
+    background-color: #0000006a;
     display: inline-block;
     padding: 0 5px;
+    text-shadow: 1px 1px 0px #000;
+}
+
+p.semantic {
+    margin-bottom: 2em;
 }
 
 
