@@ -7,15 +7,28 @@
     <title>white-space property</title>
     <style>
         p.pre {
-            white-space: pre;
+            white-space: pre; /* o navegador exibirá TODOS os espaços e quebras de linhas existentes no código-fonte. Essa declaração é um dos estilos que o navegador aplica a um conteúdo marcado pelo elemento <pre> */
         }
 
         p.nw {
-            white-space: nowrap;
+            white-space: nowrap; /* o texto do elemento será exibido em uma única linha, a menos que o elemento <br> seja utilizado */
         }
 
         p.default {
-            white-space: normal;
+            white-space: normal; /* aqui, múltiplos espaços são exibidos pelo navegador como um único espaço, e as quebras de linha feitas com a tecla 'enter' são ignoradas. This is default */
+        }
+
+        p.prew {
+            white-space: pre-wrap;
+        }
+
+        div {
+            width: 250px;
+            background-color: bisque;
+        }
+
+        div > p {
+            white-space: pre-wrap;
         }
     </style>
 </head>
@@ -28,9 +41,21 @@
 
         <p class="default">Lorem     ipsum dolor sit amet consectetur, adipisicing elit. Quidem suscipit aliquid quo aperiam qui quasi itaque delectus maxime ipsam recusandae. Sint, reprehenderit enim quod excepturi fugit, natus quae velit perferendis pariatur laboriosam officia, aliquid cum! Ad provident incidunt rem nemo sunt quisquam esse dolor alias accusantium. Veniam magnam veritatis id facilis, laudantium quod, corporis corrupti nobis, cupiditate sequi ratione placeat vero earum nulla expedita aperiam magni? Quae assumenda ab architecto pariatur aliquam itaque commodi ipsum optio eligendi possimus. Aliquid id placeat maxime cupiditate, ipsam voluptates tempore, ullam animi error dignissimos officia molestiae, adipisci ut temporibus veritatis explicabo eos aperiam? Iusto error recusandae fugit necessitatibus quae dolore consectetur, corrupti atque, sapiente, voluptatibus perspiciatis hic ex rem illo eius. Porro cumque laudantium soluta perspiciatis nihil architecto, facere dicta exercitationem odio perferendis. Voluptas et dolorum consequatur distinctio officiis ad rem quod quis laborum, quos voluptatem cum repellat obcaecati sequi eveniet nulla illo. Minima laboriosam nam dolorum neque harum. Maxime quia, culpa, repudiandae ad amet molestias quasi mollitia deserunt repellat vero debitis, dignissimos praesentium quod enim blanditiis velit ducimus maiores doloremque ipsum. Cupiditate blanditiis esse iure enim rerum! Optio, quo recusandae. Voluptate nihil necessitatibus temporibus molestiae, deleniti pariatur et recusandae reprehenderit accusantium vitae maiores quae laborum. Eligendi obcaecati dignissimos dolorum atque, sequi incidunt possimus consequatur in nobis, eveniet laborum perferendis eos illum dolore explicabo quod nemo ut consectetur, culpa veniam earum nisi! Sit minus dignissimos possimus expedita deleniti molestias rerum dolores cum dolorem quos ad culpa, corporis accusamus similique consequatur sequi ea? Vel exercitationem numquam tempora minus ut repellat quia ad quas quasi ea iusto officiis totam autem pariatur, tempore ipsa maiores voluptatibus corporis molestiae dolor et neque rerum? Et molestiae quia eveniet debitis totam delectus id excepturi minima ex optio animi amet explicabo consequatur nulla laborum aperiam, error facere? Voluptates, nemo officiis! Possimus?</p>
 
-        <pre>
-            <p>Lorem       ipsum dolor sit amet, consectetur adipisicing elit. Quaerat amet nihil ipsam quidem, culpa possimus neque quam. Quae, modi quo hic eos laboriosam, quos asperiores illum saepe facilis, blanditiis aut? Illum ipsa et at, libero eveniet inventore laboriosam consequatur perferendis hic nobis eum maxime optio repellendus pariatur voluptatibus! Qui labore, accusamus nobis fugit officiis sequi maxime? Doloribus deserunt et assumenda, sequi rerum vero voluptatum autem in natus molestias ea modi eos enim aspernatur necessitatibus tempora expedita praesentium ratione quidem totam sapiente vitae dolore ducimus? Iusto veniam voluptate id dolorem dolore aperiam aliquid. Itaque ex modi omnis culpa impedit ad distinctio.</p>
-        </pre>
+        
+            <p class="pre">Lorem       ipsum dolor sit amet, consectetur adipisicing elit. Quaerat amet nihil ipsam quidem, culpa possimus neque quam. Quae, modi quo hic eos laboriosam, quos asperiores illum saepe facilis, blanditiis aut? Illum ipsa et at, libero eveniet inventore laboriosam consequatur perferendis hic nobis eum maxime optio repellendus pariatur voluptatibus! 
+                
+                Qui labore, accusamus nobis fugit officiis sequi maxime? Doloribus deserunt et assumenda, sequi rerum vero voluptatum autem in natus molestias ea modi eos enim aspernatur necessitatibus tempora expedita praesentium ratione quidem totam sapiente vitae dolore ducimus? Iusto veniam voluptate id dolorem dolore aperiam aliquid. Itaque ex modi omnis culpa impedit ad distinctio.</p>
+
+        <p class="prew">Lorem        ipsum dolor sit amet consectetur,       adipisicing elit. Nulla eius totam, maiores qui ducimus id ab perferendis at temporibus, et possimus distinctio optio. Id pariatur, ratione dolore, voluptatibus sed repellat, ipsum inventore est iusto eaque consequuntur deleniti! Enim ducimus odio dolores maxime. Reprehenderit enim voluptates obcaecati aperiam ipsa veritatis, nobis praesentium nam excepturi in ipsam vitae. Id aperiam sit, voluptates similique voluptatum commodi quibusdam, error maiores nemo provident corrupti animi, labore dicta laborum! Laboriosam consectetur dignissimos nemo quam perspiciatis velit delectus, quidem non excepturi 
+            
+            nam blanditiis! Magnam voluptate veritatis amet corporis ex eius vel, tenetur pariatur ducimus reprehenderit impedit alias?</p>
+
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere cum, quisquam iure iusto quasi unde dolorum quae vitae dolor doloribus repellendus, saepe, fugit harum odit recusandae neque illo velit ullam ducimus officia eius rerum. Nihil reiciendis blanditiis quis atque voluptatum eaque, unde quam maiores fuga veritatis, 
+                    nulla cumque error inventore libero laborum et temporibus quos praesentium amet rerum dignissimos. Maxime exercitationem
+                     neque sapiente ipsam officia rem reiciendis maiores aut, blanditiis soluta, voluptas aliquid tempore obcaecati porro, in nostrum ratione quidem? Quod libero, ea eum quae nesciunt quam enim illo, debitis tempora possimus consequatur labore, quisquam dolore quia. Corrupti, consequatur earum!</p>
+            </div>
+        
     
     
 </body>
