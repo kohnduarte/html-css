@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        h1 {
+            text-decoration: underline wavy;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        tr.cor {
+            background-color: rgb(179, 178, 178);
+        }
+
+        td {
+            border: 2px solid;            
+            padding: 5px 40px;
+        }
+
+        td.destaque {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+
+    <!-- 
+        HIERARQUIA DE TABELAS (simples)
+
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                TABLE DATA = dado de tabela
+    -->
+
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="cor">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td class="destaque">B3</td>
+            <td>C3</td>
+        </tr>
+        <tr class="cor">
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td>B5</td>
+            <td></td>
+        </tr>
+        <tr class="cor">
+            <td></td>
+            <td></td>
+            <td>C6</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>B7</td>
+            
+        </tr>
+        <tr class="cor">
+            <td class="destaque">A8</td>
+            
+        </tr>
+    </table>
+    
+</body>
+</html>
