@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas com bastante semântica</title>
+    <style>
+        h1 {
+            font: bold 1.5em/1.4 Georgia, 'Times New Roman', Times, serif;
+            text-decoration: underline double;
+            margin-bottom: 30px;
+        }
+
+        table {
+            border-spacing: 5px; /* 'border-spacing' funciona somente com 'border-collpase: separate;' */
+            border-collapse: collapse;
+            border: 3px solid;
+        }
+
+        thead {
+            background-color: blanchedalmond;
+        }
+
+        th, td {
+            border: 2px solid;
+            padding: 5px 10px;
+            text-align: center;
+            height: 50px;
+            vertical-align: middle;
+        }
+            /* o navegador aplica 'vertical-align: middle' aos elementos 'thead' e 'tbody'.
+            Aos seus descendentes, ele força a herança com 'vertical-align: inherit' */
+
+        th {
+            font: bold 1.1em Arial;
+            text-decoration: underline;
+        }
+
+        tfoot {
+            background-color: beige;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Os cinco Estados <br> mais populosos do Brasil</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td>46 024 937</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td>20 732 660</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td>16 615 526</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bahia</td>
+                <td>14 659 023</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Paraná</td>
+                <td>11 835 379</td>
+            </tr>
+        </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>\</td>
+                    <td>109 867 525</td>
+                </tr>
+            </tfoot>
+    </table>
+    
+</body>
+</html>
