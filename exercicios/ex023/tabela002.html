@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
         h1 {
-            font: bold 1.5em/1.4 Georgia, 'Times New Roman', Times, serif;
+            font: bold 2em Georgia, 'Times New Roman', Times, serif;
             text-decoration: underline double;
             margin-bottom: 30px;
         }
@@ -17,6 +17,12 @@
             border-spacing: 5px; /* 'border-spacing' funciona somente com 'border-collapse: separate;' */
             border-collapse: collapse;
             border: 3px solid;
+        }
+
+        caption {
+            font: normal small-caps bold 1.3em/1.4 Georgia, 'Times New Roman', Times, serif;
+            padding-bottom: 5px;
+            caption-side: top; /* 'caption-side' define o posicionamento da legenda da tabela */
         }
 
         thead {
@@ -45,14 +51,16 @@
     </style>
 </head>
 <body>
-    <h1>Os cinco Estados <br> mais populosos do Brasil</h1>
+    <h1>População Brasileira</h1>
 
     <table>
+        <caption>Os dez Estados mais populosos do Brasil</caption>
+            <!-- o elemento 'caption' deve ser inserido imediatamente após o elemento 'table', ou seja, deve ser o primeiro filho de 'table' -->
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -81,12 +89,37 @@
                 <td>Paraná</td>
                 <td>11 835 379</td>
             </tr>
+            <tr>
+                <td>6</td>
+                <td>Rio Grande do Sul</td>
+                <td>11 088 065</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Pernambuco</td>
+                <td>9 051 113</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Ceará</td>
+                <td>8 936 431</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Pará</td>
+                <td>8 442 962</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Santa Catarina</td>
+                <td>7 762 154</td>
+            </tr>
         </tbody>
             <tfoot>
                 <tr>
-                    <td>Total</td>
+                    <th scope="row">Total</th>
                     <td>\</td>
-                    <td>109 867 525</td>
+                    <td>155 148 250</td>
                 </tr>
             </tfoot>
     </table>
