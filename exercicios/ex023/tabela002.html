@@ -48,6 +48,10 @@
             background-color: beige;
         }
 
+        tbody tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
     </style>
 </head>
 <body>
@@ -57,6 +61,7 @@
         <caption>Os dez Estados mais populosos do Brasil</caption>
             <!-- o elemento 'caption' deve ser inserido imediatamente após o elemento 'table', ou seja, deve ser o primeiro filho de 'table' -->
         <thead>
+            <!-- os elementos 'thead' 'tbody' e 'tfoot' dividem a tabela em seções que correspondem, respectivamente, à sua cabeça, ao seu corpo e ao seu pé(ou rodapé). Um exemplo da utilidade disso é que, no caso de tabelas enormes, que ocupam várias páginas, o cabeçalho e o rodapé são impressos em cada página -->
             <tr>
                 <th scope="col">Posição</th>
                 <th scope="col">Estado</th>
