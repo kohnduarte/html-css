@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child()</title>
+    <style>
+        h1 {
+            text-decoration: underline dotted;
+        }
+        p {
+            font: bold 1em/1.5 Arial;
+        }
+
+        ul {
+            list-style-position: inside;
+            list-style-type: square;
+        }
+
+        li {
+            padding: 1vh;
+        }
+
+        li:nth-child(odd) {/* odd/even = ímpar/par */
+            background-color: greenyellow;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 15px;
+            /* 'border-spacing' só funciona se 'border-collapse: separate;' */
+        }
+
+        caption {
+            padding: 10px;
+            font-size: 1.2em;
+        }
+
+        thead {
+            background-color: rgb(234, 182, 119);
+        }
+
+        th, td {
+            border: 2px solid;
+            padding: 10px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>A propriedade <code>nth-child()</code></h1>
+    <p>Essa propriedade seleciona elementos irmãos <br> com base na posição que eles ocupam dentro de um elemento pai.</p>
+    <p>Exemplo com uma lista:</p>
+
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Quibusdam illo dignissimos molestiae ut!</li>
+        <li>Voluptate, quibusdam. Obcaecati, eius quibusdam.</li>
+        <li>Ex illum numquam ipsam explicabo.</li>
+        <li>Assumenda eligendi voluptatem eaque quod?</li>
+        <li>Similique vitae ipsa eius impedit?</li>
+        <li>Accusamus debitis voluptatibus beatae perspiciatis?</li>
+        <li>Quia ducimus nostrum mollitia maxime?</li>
+        <li>Alias, ab! Eligendi, ipsa at.</li>
+        <li>Dolorem, temporibus enim. Vero, nostrum!</li>
+    </ul>
+
+    <table>
+        <caption>Lorem ipsum dolor sit amet</caption>
+        <thead>
+            <tr>
+                <th scope="col">Lorem, ipsum dolor.</th>
+                <th scope="col">Dignissimos, expedita ab!</th>
+                <th scope="col">Accusantium, nesciunt id?</th>
+                <th scope="col">Odit, aliquam harum.</th>
+                <th scope="col">Ratione, voluptate quas.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td>At, magnam officiis!</td>
+                <td>Nihil, error alias!</td>
+                <td>Praesentium, non voluptatibus.</td>
+                <td>Voluptatum, nam assumenda.</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Fuga, labore iure.</td>
+                <td>Aliquam, nihil optio?</td>
+                <td>Amet, distinctio repellendus?</td>
+                <td>Consequatur, expedita tenetur.</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Cum, velit saepe!</td>
+                <td>Nisi, reprehenderit provident.</td>
+                <td>Blanditiis, perspiciatis dolorem.</td>
+                <td>Non, fugiat aut.</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Iusto, error cum?</td>
+                <td>Quam, sint illum?</td>
+                <td>Cupiditate, ipsam quis!</td>
+                <td>Quo, ea dicta.</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Nostrum, alias. Incidunt?</td>
+                <td>Molestias, dolores velit.</td>
+                <td>Quia, ut praesentium.</td>
+                <td>Inventore, at nobis.</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Eaque, a voluptate!</td>
+                <td>Quia, aspernatur est.</td>
+                <td>Molestias, ad enim?</td>
+                <td>Expedita, qui voluptas.</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Itaque, recusandae officia?</td>
+                <td>Aliquid, voluptatibus doloribus.</td>
+                <td>Sequi, similique sapiente.</td>
+                <td>Deserunt, eius fuga!</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Iusto, error inventore.</td>
+                <td>Ea, iure quasi.</td>
+                <td>Similique, obcaecati magnam.</td>
+                <td>Hic, doloremque tempora.</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Itaque, vel deleniti.</td>
+                <td>Tempora, vel iure!</td>
+                <td>Animi, fugit magnam.</td>
+                <td>Ratione, maiores reprehenderit?</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Veritatis, sequi in?</td>
+                <td>Iusto, consequuntur nulla?</td>
+                <td>Assumenda, id aliquam?</td>
+                <td>Quo, minima dicta.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
