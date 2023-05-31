@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+table {
+    border-collapse: collapse;
+    /* as bordas das células são exibidas, por padrão, separadas */
+    border-spacing: 2px;
+    /* só funciona se 'border-collapse: separate' */
+}
+
+td { /* table data, o elemento 'td' define uma célula de dados */
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px 20px;
+}
