@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+table {
+    border-collapse: separate;
+}
+
+td {
+    border: 1px solid #000;
+    padding: 10px 20px;
+    vertical-align: middle;
+    /* o navegador aplica 'vertical-align: middle;' às seções da tabela, isto é, aos elementos 'thead' 'tbody' e 'tfoot'. Depois, ele força a herança aplicando 'vertical-align: inherit;' às linhas (tr) e às células (th e td) */
+    text-align: center;
+}
