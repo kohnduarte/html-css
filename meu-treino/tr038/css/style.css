@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+table {
+    /*border-spacing: 16px; essa propriedade só funciona se 'border-collapse: separate'*/
+    border-collapse: collapse;
+    border: 2px solid;
+}
+
+caption {
+    padding-bottom: 10px;
+    font: italic small-caps bold 1.5em 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* 'small-caps': as letras minúsculas ganham a forma de letras maiúsculas. O tamanho permanece o mesmo, de minúsculas */
+}
+
+thead {
+    background-color: chocolate;
+    border-bottom: 2px solid;
+}
+
+td, th {
+    border: 1px solid #000;
+    /* o navegador exibe as células separadas por um espaço de 2px = border-collapse: separate;
+                    border-spacing: 2px; */
+    padding: 10px 20px;
+}
+
+td {
+    text-align: center;
+}
+
+tfoot {
+    background-color: bisque;
+}

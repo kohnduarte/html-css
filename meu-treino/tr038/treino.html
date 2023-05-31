@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colspan e Rowspan</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <table>
+        <caption>Legenda da Tabela</caption>
+        <!-- 'caption' deve vir imediatamente após 'table' -->
+        <thead>
+            <tr>
+                <th scope="col">A</th>
+                <th scope="col">B</th>
+                <th scope="col">C</th>
+                <th scope="col" colspan="2">D</th>
+                <!-- os atributos 'colspan' e 'rowspan' determinam quantas colunas ou linhas uma célula vai abranger -->
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>F</td>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+                <td>J</td>
+            </tr>
+            <tr>
+                <td>K</td>
+                <td>L</td>
+                <td>M</td>
+                <td>N</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td>P</td>
+                <td>Q</td>
+                <td>R</td>
+                <td>S</td>
+                <td>T</td>
+            </tr>
+            <tr>
+                <td>U</td>
+                <td colspan="2">V</td>
+                
+                <td rowspan="3">X</td>
+                <td>Y</td>
+            </tr>
+            <tr>
+                <td>Z</td>
+                <td>A</td>
+                
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>F</td>
+                
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>K</td>
+                <td rowspan="2">L</td>
+                <td>M</td>
+                <td>N</td>
+            </tr>
+            <tr>
+                <td>O</td>
+                <td>P</td>
+                
+                <td>R</td>
+                <td>S</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>T</td>
+                <td>U</td>
+                <td>V</td>
+                <td>W</td>
+                <td>X</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
