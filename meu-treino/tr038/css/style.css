@@ -12,9 +12,16 @@ caption {
     /* 'small-caps': as letras minúsculas ganham a forma de letras maiúsculas. O tamanho permanece o mesmo, de minúsculas */
 }
 
+caption::after { /* espaço = \00A0 */
+    content: '\00A0\1F4CB';
+    
+}
+
 thead {
     background-color: chocolate;
     border-bottom: 2px solid;
+    position: sticky;
+    top: -1px;
 }
 
 td, th {
@@ -28,6 +35,16 @@ td {
     text-align: center;
 }
 
+tr:nth-child(even) { /* even = par, odd = ímpar */
+    /* essa pseudoclasse seleciona elementos com base na posição que eles ocupam dentro de um elemento pai */
+    background-color: lightgray;
+}
+
 tfoot {
     background-color: bisque;
+}
+
+::selection {
+    background-color: black;
+    color: #fff;
 }
