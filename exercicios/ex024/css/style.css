@@ -8,6 +8,11 @@ table {
     border-collapse: collapse;
 }
 
+caption {
+    font: italic small-caps bold 1.3em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;
+}
+
 thead, th:first-child {
     background-color: rgb(201, 150, 113);
 }

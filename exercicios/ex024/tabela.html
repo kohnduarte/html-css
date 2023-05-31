@@ -9,17 +9,18 @@
 </head>
 <body>
     <table>
+        <caption>Filmes Favoritos</caption>
         <thead>
             <tr>
-                <th scope="col">Grupo</th> <!--rowgroup???-->
+                <th scope="col">Grupo</th>
                 <th scope="col">Nomes</th>
-                <th scope="col" colspan="3">Filmes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
             
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th scope="row" rowspan="3">Mulheres</th>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -40,7 +41,7 @@
             
             </tr>
             <tr>
-                <th scope="row" rowspan="3">Homens</th>
+                <th scope="rowgroup" rowspan="3">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
@@ -61,6 +62,13 @@
             
             </tr>
         </tbody>
+        <tfoot>
+        <!-- área definida apenas para mostrar que nem sempre que houver mesclagem de células haverá um escopo de grupo  -->    
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
     </table>
     
 </body>
