@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        p {
+            /*white-space: pre-wrap;*/
+        }
+
+        table {
+            border-collapse: collapse;
+            font: 1em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        caption {
+            caption-side: bottom;
+            padding-top: 5px;
+            font-weight: bold;
+            word-spacing: .1em; /* tracking */
+            letter-spacing: .1em; /* kerning */
+        }
+
+        thead {
+            background-color: gray;
+        }
+
+        thead th:nth-child(n+2) {
+            letter-spacing: .1em;
+        }
+
+        tr:nth-child(2n+2) {
+            background-color: lightgray;
+        }
+
+        th, td {
+            border: 2px solid #000;
+            padding: 5px 10px;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+        tbody th {
+            text-align: left;
+            font-weight: normal;
+        }
+
+        /*div.teste {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }*/
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iure a dignissimos. Minus earum autem esse tempora libero eveniet fugiat atque recusandae animi! Aperiam ut neque harum! Quisquam tenetur expedita odio, iste repudiandae ea adipisci! Laborum iusto maiores quo quia odit dolores eius nesciunt corporis ducimus cumque optio fuga sapiente tempora eveniet neque recusandae repellendus, molestiae dolor explicabo a? Quam impedit facere corporis harum sapiente dolore eveniet molestiae, commodi repellendus. Accusantium ipsa velit aliquam, vel aspernatur, fugiat harum commodi at labore tempore, omnis recusandae nihil nobis maxime minima minus sunt repellendus amet. Impedit fugiat minima architecto neque. Nostrum, fugit quibusdam!</p>
+
+    <table>
+        <caption>Legenda da Tabela</caption>
+        <thead>
+            <tr>
+                <th scope="col">Produto</th>
+                <th scope="col">Jan</th>
+                <th scope="col">Fev</th>
+                <th scope="col">Mar</th>
+                <th scope="col">Abr</th>
+                <th scope="col">Mai</th>
+                <th scope="col">Jun</th>
+                <th scope="col">Jul</th>
+                <th scope="col">Ago</th>
+                <th scope="col">Set</th>
+                <th scope="col">Out</th>
+                <th scope="col">Nov</th>
+                <th scope="col">Dez</th>
+            </tr>
+        </thead>
+
+        <!-- a folha de estilo embutida do navegador aplica 'vertical-align: middle' às seções da tabela (thead, tbody e tfoot). Depois, ele força a herança nas linhas e células com 'vertical-align: inherit' -->
+
+        <tbody>
+            <tr>
+                <th scope="row">TV 40"</th>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>01</td>
+                <td>01</td>
+                <td>04</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <th scope="row">Home Theater</th>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>01</td>
+                <td>01</td>
+                <td>04</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <th scope="row">Samsung Galaxy S20</th>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>01</td>
+                <td>01</td>
+                <td>04</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <th scope="row">iPad Mini</th>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>01</td>
+                <td>01</td>
+                <td>04</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <th scope="row">PlayStation 4</th>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>01</td>
+                <td>01</td>
+                <td>04</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <th scope="row">Lava Louças</th>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>01</td>
+                <td>01</td>
+                <td>04</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <th scope="row">Amazon Echo</th>
+                <td>01</td>
+                <td>04</td>
+                <td>07</td>
+                <td>12</td>
+                <td>12</td>
+                <td>10</td>
+                <td>05</td>
+                <td>02</td>
+                <td>01</td>
+                <td>01</td>
+                <td>04</td>
+                <td>16</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
