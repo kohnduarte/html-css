@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <link rel="shortcut icon" href="https://em-content.zobj.net/thumbs/120/twitter/348/water-wave_1f30a.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        code {
+            text-decoration: underline wavy;
+        }
+
+        p {
+            font-size: 1.3em;
+        }
+
+        ul {
+            list-style-type: '\1F30A\00A0';
+            list-style-position: outside;
+        }
+
+        li {
+            margin-bottom: 2px;
+            text-decoration: underline wavy;
+        }
+
+        div {
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+            /*overflow: overlay;*/
+            overflow: auto hidden;
+            
+        }
+
+        p.div {
+            margin: 0;
+            width: 400px;
+            height: 800px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>A propriedade <code>overflow</code></h1>
+    <p>Especifica o que deve acontecer quando o conteúdo de um elemento não cabe na caixa de seu elemento pai e acaba transbordando</p>
+    <p>Seus valores são as seguintes palavras-chave:</p>
+
+    <ul>
+        <li>visible</li>
+        <li>hidden</li>
+        <li>clip</li>
+        <li>scroll</li>
+        <li>auto</li>
+        <li>overlay</li>
+    </ul>
+
+    <p>Só pode ser aplicada a elementos de nível de bloco com uma altura especificada</p>
+
+    <h2>Exemplos</h2>
+        <div>
+            <p class="div">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos facilis possimus aliquid dolores, voluptates dolorum odio dolor harum. Hic obcaecati quo dolorem facere? Doloremque et dolorem exercitationem est voluptatibus alias illo, culpa non dolorum, iure adipisci provident eum! Quidem dolorem animi cumque velit delectus expedita culpa labore voluptates eos? Repellendus obcaecati praesentium repudiandae, debitis quas tempora libero aperiam voluptatibus cum dolorum magnam non deleniti laboriosam. Eum, animi laudantium! Molestiae soluta et voluptatum cum ratione nemo amet nostrum vel alias! Fugiat voluptatem deleniti voluptates ratione in ex, magni alias dolor id rem quam consequatur provident sapiente dolorum repellat! Voluptatem, quos dolorem!</p>
+        </div>
+    
+</body>
+</html>
