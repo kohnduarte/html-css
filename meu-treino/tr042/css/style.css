@@ -12,6 +12,10 @@
 :root {
     --fonte-titulo: 'Heaters', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --fonte-corpo: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --cor01: #3D315B;
+    --cor02: #444B6E;
+    --cor03: #708B75;
+    --cor04: #9AB87A;
 }
 
 /* seletor universal, seus estilos são aplicados a todos os elementos */
@@ -24,6 +28,8 @@ body {
     
     
 }
+ 
+                    /* HEADER */
 
 header {
     text-align: center;
@@ -37,9 +43,32 @@ h1 {
     letter-spacing: 0.1em; /* kerning */
 }
 
+h1::before {
+    content: '\1F56E\00A0';
+}
+
+                    /* MAIN */
+
+main {
+    padding: 2vw;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+h2 {
+    font-family: var(--fonte-corpo);
+    margin: 0.83em 0;
+    text-decoration: underline double;
+}
+
 p {
     font-family: var(--fonte-corpo);
     
+}
+
+main p {
+    text-indent: 20px;
 }
 
 span {
@@ -49,4 +78,7 @@ span {
 pre {
     background-color: #000;
     color: #fff;
+    margin: 1em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px 0px #000;
 }
