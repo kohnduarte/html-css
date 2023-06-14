@@ -85,5 +85,14 @@ pre {
     margin: 1em;
     border-radius: 10px;
     box-shadow: 0px 0px 7px 0px #000;
-    
+    white-space: pre-wrap;
+}
+
+div#para {
+    width: 400px;
+    height: 400px;
+    color: #fff;
+    background: var(--cor02) url('https://www.travelandleisure.com/thmb/91pb8LbDAUwUN_11wATYjx5oF8Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/new-york-city-evening-NYCTG0221-52492d6ccab44f328a1c89f41ac02aea.jpg') center/cover fixed;
+    margin: auto;
+    padding: 15px;
 }
