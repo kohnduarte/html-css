@@ -130,5 +130,5 @@ div#abs {
 img {
     display: block;
     margin: auto;
-    transform: scale(2, 0.5) translate(-10%, 10%);
+    transform: scale(2, 0.5) translate(-10%, 10%) rotate(0.5turn);
 }
