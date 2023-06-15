@@ -41,6 +41,7 @@ h1 {
     word-spacing: -0.1em; /* tracking */
     /* 'em' é uma unidade relativa sempre ao tamanho da fonte */
     letter-spacing: 0.1em; /* kerning */
+    
 }
 
 h1::before {
