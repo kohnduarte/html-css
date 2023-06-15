@@ -69,6 +69,7 @@ p {
 
 main p {
     text-indent: 20px;
+    text-align: justify;
 }
 
 span {
@@ -104,4 +105,23 @@ p.transborda {
     height: 100px;
     background-color: #fff;
     overflow: scroll hidden;
+}
+
+div#rel {
+    width: 400px;
+    height: 400px;
+    background-color: var(--cor04);
+    margin: auto;
+    /*position: static;*/ /* por natureza, todo elemento é estático. */
+    position: relative; /* o elemento permanece no fluxo normal do documento e pode ser deslocado através das propriedades 'top right bottom left'. Esse deslocamento será em relação a si mesmo, em relação à sua posição original. O espaço que ele ocupava antes de ser deslocado é mantido.*/
+}
+
+div#abs {
+    width: 50px;
+    height: 50px;
+    background-color: var(--cor03);
+    position: absolute; /* um elemento posicionado absolutamente é removido do fluxo normal do documento (nenhum espaço é mantido). Ele pode ser posicionado em relação ao seu ancestral posicionado (que não é estático) mais próximo. Se não houver, será em relação a <body> */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
