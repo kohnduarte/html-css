@@ -171,4 +171,5 @@ div#trans:hover {
     background-color: #111412;
     transition-duration: 10s, 1s, 0s;
     transition-property: width, height, background-color;
+    /* 'transition-duration' determina o tempo que uma modificação leva para ser concluída. Se houver várias modificações, esse tempo será aplicado a todas elas. Porém, é possível determinar tempos diferentes para cada modificação. Com 'transition-property', eu declaro as propriedades que sofrerão as modificações e em 'transition-duration' eu ponho os valores para cada uma delas. Atenção com a ordem */
 }
