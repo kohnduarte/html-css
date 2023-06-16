@@ -33,12 +33,7 @@ body:hover {
     transition-duration: 10s;
 }
 
-body:hover footer {
-    color: rgb(43, 30, 55);
-    transition-duration: 10s;
-}
-
-body:hover footer a {
+body:hover footer, body:hover footer a {
     color: rgb(43, 30, 55);
     transition-duration: 10s;
 }
