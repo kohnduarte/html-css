@@ -132,3 +132,26 @@ img {
     margin: auto;
     transform: scale(2, 0.5) translate(-10%, 10%) rotate(0.5turn);
 }
+
+dl {
+    margin-top: 20px;
+    text-align: center;
+    height: 100px;
+    background-color: beige;
+    overflow: auto;
+}
+
+div.dl {
+    margin-bottom: 15px;
+}
+
+dt {
+    background-color: aqua;
+    position: sticky;
+    top: 0;
+}
+
+dt, dd {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
