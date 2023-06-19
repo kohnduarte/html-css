@@ -4,16 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+        iframe {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
     <p>Acessando o site do <a href="https://www.cursoemvideo.com" target="_blank" rel="external">CursoemVideo</a> para aprender a programar.</p>
 
-    <p>Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe> para aprender a programar.</p>
+    <p>Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0" width="250" height="250">
+        <a href="https://www.cursoemvideo.com" target="_blank" rel="external">CursoemVídeo</a>
+    </iframe> para aprender a programar.</p>
 
     <!-- o elemento 'iframe' (inline frame, quadro em/na linha, quadro embutido) exibe uma página dentro de uma página. Ele exibe uma página em um quadro dentro do conteúdo de uma página. Às vezes não é a página inteira, mas sim um pedaço como, por exemplo, um vídeo do youtube. -->
 
     <!-- <iframe> incorpora outro documento ao documento atual -->
+
+    <!-- hoje em dia, o elemento 'iframe' provavelmente é compatível com todos os navegadores. Porém, se houvesse algum problema, bastaria colocar uma mensagem ou link dentro dele. -->
+
+    <p>
+        O meu <iframe width="400" height="400" src="https://kohnduarte.github.io/html-css/exercicios/ex024/iframe001.html" frameborder="1" scrolling="no">
+            [ Seu navegador não suporta o elemento iframe ]     ou
+            <a href="https://kohnduarte.github.io/html-css/exercicios/ex024/iframe001.html" target="_blank">repositório</a>
+        </iframe> no GitHub.
+    </p>
+
+    <!-- por padrão, um iframe tem 300px de largura por 150px de altura. Isso pode ser alterado através dos atributos 'width' e 'height' ou com CSS. Se as duas coisas forem feitas, ou seja, se eu modificar em HTML e em CSS, as CSS ganham.-->
+
+    <!-- de acordo com uma das referências online, o atributo 'frameborder' está OBSOLETO. Infelizmente o VSCode ainda carrega o elemento 'iframe' com esse atributo. Em vez disso, é aconselhado utilizar a propriedade 'border'. -->
+
+    <!-- o atributo 'scrolling' também está obsoleto. -->
     
 </body>
 </html>
