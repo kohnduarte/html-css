@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        iframe {
+            border: 2px solid;
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Usando um único quadro para exibir/incorporar mais de um documento ao documento atual:
+    
+    Primeiro, damos um nome ao quadro através do atributo 'name'.
+
+    Esse nome será usado no atributo 'target' de um link. -->
+
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nam harum unde reiciendis ea, ipsa quo porro blanditiis repellendus voluptatem facere molestiae voluptatum iusto corporis qui, architecto quaerat eos incidunt!</p>
+
+    <ul>
+        <li><a href="https://html.spec.whatwg.org/multipage/" target="frame">Primeira página</a></li>
+        <li><a href="https://www.youtube.com/embed/y6CKgnBYs5E" target="frame">Segunda página</a></li>
+        <li><a href="../ex023/tabela002.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus harum eligendi quasi corporis fugiat ex! Fugiat temporibus neque cum atque qui exercitationem! Repudiandae totam ad magni amet quia tempora ipsa? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat architecto ratione hic dolor dignissimos assumenda sit sunt maiores accusamus dolores omnis consectetur, earum aut in ullam obcaecati iste illum ipsam! </p>
+
+    <iframe src="" name="frame"></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deleniti incidunt dolore dolores facilis nam nulla vel id, cumque beatae maiores placeat temporibus fugiat ullam corporis veritatis amet! Culpa consectetur dolorem quam pariatur! Eaque rem optio necessitatibus omnis dolore, pariatur, possimus nobis quibusdam quod veniam alias asperiores corrupti. Dicta, maiores.</p>
+</body>
+</html>
