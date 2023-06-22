@@ -25,6 +25,19 @@
             background-color: bisque;
         }
 
+       article p + p {
+            color: chocolate;
+       }
+
+       article h2 ~ p {
+            background-color: aqua;
+       }
+
+       p + img { /* seletor irmão adjacente */
+            width: 50px;
+            height: 50px;
+       }
+
         
     </style>
 </head>
@@ -37,6 +50,26 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur necessitatibus molestiae nesciunt soluta dolorem sit corrupti modi voluptates rem aut libero earum vero debitis perspiciatis, ipsa quibusdam? Illum, soluta.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur necessitatibus molestiae nesciunt soluta dolorem sit corrupti modi voluptates rem aut libero earum vero debitis perspiciatis, ipsa quibusdam? Illum, soluta.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consectetur necessitatibus molestiae nesciunt soluta dolorem sit corrupti modi voluptates rem aut libero earum vero debitis perspiciatis, ipsa quibusdam? Illum, soluta.</p>
+
+    <hr>
+
+    <article>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nostrum similique! Error nihil itaque nulla sed dolor rem reprehenderit earum tenetur quibusdam cum deleniti, dignissimos aut doloremque ex ea eaque?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, rem molestias impedit voluptate et pariatur ab numquam, praesentium necessitatibus excepturi aperiam vitae odit veniam modi accusamus tempore error, dolorum repellendus.</p>
+
+        <br>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni numquam veritatis consequatur nihil earum, tempore voluptatem accusamus cum eius, veniam ab itaque perferendis. Error quibusdam at reprehenderit, saepe expedita fugit!</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis natus officia ipsa cupiditate veritatis impedit eos, in delectus nobis possimus odit omnis quidem, molestias illum temporibus eius. Aspernatur, magnam quod.</p>
+            
+            <img src="../../img/fundo01.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis expedita eum, similique ea repellendus iste qui id optio nesciunt. Dolor est dolorum nostrum fuga commodi laboriosam nisi! Ducimus, saepe? Praesentium.</p>   
+        </div>
+    </article>
+
+    
     
     
 </body>
