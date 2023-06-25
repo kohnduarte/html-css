@@ -9,34 +9,56 @@
 </head>
 <body>
     <h1>Seletor de atributo</h1>
+
     <p>É possível selecionar elementos com base em um atributo específico com ou sem valor</p>
+
     <ul>
      <li><code>[atr]</code> <br>
         seleciona o elemento com um atributo específico, sem importar o valor. <br>
-        <span class="exemplo">ex</span>: <code>p[class] {}</code> <br>
+        <span class="line">ex</span>: <code>p[class] {}</code> <br>
         Essa regra de estilo seleciona todos os elementos <code>&lt;p&gt;</code> que contenham o atributo classe. Nesse caso, o valor não importa, qualquer parágrafo com qualquer classe será selecionado.
      </li>
 
      <li><code>[atr="novo"]</code> <br>
         seleciona o elemento com um atributo específico que contenha "novo" como seu único valor. <br>
-        <span class="exemplo">ex</span>: <code>p[class="novo"] {}</code> &rarr; <code>&lt;p class="novo"&gt;</code> <br>
+        <span class="line">ex</span>: <code>p[class="novo"] {}</code> &rarr; <code>&lt;p class="novo"&gt;</code> <br>
         se o <code>&lt;p&gt;</code> tiver outra classe além de "novo", ele não será selecionado.    
      </li>
 
      <li><code>[atr~="novo"]</code> <br>
-        
-
-
-
+        "novo" deve ser <span class="line">uma palavra do valor</span>. Pode ser a única palavra do valor ou <span class="line">uma palavra separada de outra(s) por um espaço.</span>
      </li>
-    
 
+     <li><code>[atr*="est"]</code> <br>
+        este seletor corresponde a qualquer elemento com um atributo específico que contenha, dentro de seu valor, o trecho "est". "est" pode ser <span class="line">a única palavra</span> do valor <span class="line">ou o pedaço de uma palavra</span> do valor.
+     </li>
 
+     <li><code>[atr^="top"]</code> <br>
+        seleciona todo elemento com um atributo específico que contenha "top" no início de seu valor. "top" deve ser <span class="line">a única palavra</span> do valor <span class="line">ou o início do valor</span>.
+     </li>
 
+     <li><code>[atr$="st"]</code> <br>
+        seleciona todo elemento com um atributo específico que contenha um valor que termine com "st". "st" pode ser <span class="line">a única palavra</span> do valor <span class="line">ou a parte final</span> do valor.
+     </li>
 
-
-
-
+     <li><code>[atr|="top"]</code> <br>
+        este seletor corresponde a qualquer elemento com um atributo específico que possua um valor "top" ou comece com "top-" (top imediatamente seguido por um hífen).
+     </li>
     </ul>
+
+    <h2>Treino</h2>
+    <section>
+        <p class="novo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam consequatur cumque atque saepe, incidunt quam dolore modi hic, neque debitis, fuga officia optio temporibus rerum ex excepturi molestias blanditiis perferendis.</p>
+        <p class="novocaminho">Cumque alias error ratione est hic praesentium, quasi repellat fuga atque aliquam deserunt cupiditate maxime quam quibusdam recusandae provident ex temporibus. Aspernatur nihil perferendis iste et voluptates quae eum natus?</p>
+        <p class="novo">Deleniti rerum accusantium voluptates dicta animi veniam, vitae laudantium culpa, voluptatum ipsum, quas quod illo. Dolores odit exercitationem voluptatibus iste vel ullam dolorum maiores, inventore asperiores sunt, doloribus vero fugit.</p>
+        <p class="novo">Quis est illum sed recusandae! Debitis voluptatem explicabo, praesentium fugit eaque quos doloremque esse voluptate. Exercitationem error tempore corrupti suscipit ab quo veritatis architecto alias doloribus, facere aperiam. Corporis, quae.</p>
+        <p class="novo">Nesciunt labore quis hic repellat autem sapiente vitae. Libero dicta quisquam suscipit hic ab sequi ipsum nisi veniam dolores? Eaque dignissimos quas adipisci modi! Quia aut architecto modi saepe porro?</p>
+        <p class="novo">Maxime adipisci facere distinctio optio voluptatem obcaecati exercitationem a debitis, officiis accusamus quos provident molestiae quidem temporibus repellat natus veniam sapiente iste ea ipsa aperiam ab. Voluptate et similique distinctio?</p>
+        <p class="novo">Placeat maiores, harum dolorum culpa soluta quae laborum recusandae quasi assumenda ipsa eum laboriosam mollitia quisquam maxime possimus ea debitis ut doloremque error at necessitatibus officiis. Officiis quasi animi nisi?</p>
+        <p class="novo">Explicabo eius rem ullam ea repudiandae ratione amet officia, facilis iure adipisci libero sit a praesentium reprehenderit iusto quis doloremque alias nemo ut. Delectus, reiciendis enim. Fugit at ipsa voluptatibus?</p>
+        <p class="novo">Perferendis nemo doloribus, earum deserunt quo laboriosam! Est itaque delectus, dolorum corporis eius, error beatae, aliquam odit ducimus quis inventore fugiat dolores. Ab eligendi libero harum nostrum nihil. Nulla, deleniti.</p>
+        <p class="novo">Beatae, soluta? Quaerat excepturi corporis veniam voluptatibus, corrupti impedit eum. Delectus minus voluptatum corporis, inventore culpa nulla nam libero similique est eius cum. Laboriosam expedita delectus est rem consequatur repellat!</p>
+    </section>
+
 </body>
 </html>

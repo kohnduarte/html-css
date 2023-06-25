@@ -33,6 +33,10 @@ li::first-line {
     color: #f00;
 }
 
-span.exemplo {
+span.line {
     text-decoration: underline;
+}
+
+section p[class~="novo"] {
+    background-color: antiquewhite;
 }
