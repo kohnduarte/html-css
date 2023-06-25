@@ -37,6 +37,11 @@ span.line {
     text-decoration: underline;
 }
 
-section p[class~="novo"] {
+section p[class|="novo"] {
     background-color: antiquewhite;
+}
+
+li:nth-child(-1n+3) {
+    visibility: visible;
+    background-color: lightgray;
 }
