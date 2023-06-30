@@ -9,9 +9,25 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            text-align: center;
+            background-color: beige;
+            padding: 60px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
         table {
             border-collapse: collapse;
             border-spacing: 10px;
+            border: 2px solid;
         }
 
         caption {
@@ -22,7 +38,7 @@
 
         thead {
             position: sticky;
-            top: -1px;
+            top: 162px;
             background-color: blanchedalmond;
         }
 
@@ -38,9 +54,19 @@
         tr:nth-child(even) {
             background-color: lightgray;
         }
+
+        p#first {
+            margin-top: 180px;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Lorem, ipsum dolor.</h1>
+    </header>
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat fuga nobis deserunt atque, sit dolorum velit maxime placeat ut dignissimos! Reiciendis accusantium aperiam vero quas, corrupti explicabo obcaecati qui?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat fuga nobis deserunt atque, sit dolorum velit maxime placeat ut dignissimos! Reiciendis accusantium aperiam vero quas, corrupti explicabo obcaecati qui?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat fuga nobis deserunt atque, sit dolorum velit maxime placeat ut dignissimos! Reiciendis accusantium aperiam vero quas, corrupti explicabo obcaecati qui?</p>
     <table>
         <caption>Passagens de avião</caption>
         <colgroup>
