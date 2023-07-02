@@ -19,14 +19,37 @@
             transition: color 3s;
             /* shorthand (transition-property, transition-duration, e +2) */
         }
+
+        input {
+            margin-top: 16px;
+        }
     </style>
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="" target="_blank">
-        <p>Nome: <input type="text" name="nome" id="nome">
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"> </p>
-        <p><input type="submit" value="Enviar"></p>
+    <!-- um formulário é um objeto ou um local onde  se inserem dados
+
+    um formulário HTML é uma seção dentro de uma página que contém controles interativos para enviar informações
+
+    os controles interativos são criados pelo elemento 'input' e o tipo deles é definido pelo atributo 'type'
+
+    pode ser uma caixa de texto comum, uma caixa de senha, um botão de rádio, uma checkbox, etc
+
+    além de 'type', os atributos 'name' e 'id' também são essenciais 
+
+    'id' será usado no atributo 'for' do elemento 'label' para fazer a ligação entre o rótulo e o controle interativo
+
+    'name' serve pro documento PHP funcionar corretamente -->
+
+    <form autocomplete="off" action="cadastro.php" target="_blank">
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome"> <br>
+        <label for="isobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="isobrenome"> <br>
+        <label for="ipass">Senha:</label>
+        <input type="password" name="" id="ipass">
+        <br>
+        <input type="submit" value="Enviar">
     </form>
     
 </body>
