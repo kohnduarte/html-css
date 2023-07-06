@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Centurion';
+    src: url('../fontes/The Centurion.woff') format('woff'), url('../fontes/The Centurion.otf') format('opentype'), url('../fontes/The Centurion.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    /* Uma regra '@font-face' fornece a localização de um arquivo de fonte. Esse arquivo contém 1 peso e 1 estilo. */
+}
+
+:root {
+    --fonte-tit: 'Centurion', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    
+}
+
+h1 {
+    font: 2.4em var(--fonte-tit);
+}
+
+div {
+    margin-bottom: 1em;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Praticando formulário HTML e outras coisas mais</h1>
+
+    <form action="destino-dos-dados.php" method="post" autocomplete="off">
+       <div>
+        <label for="inome">Nome:</label>
+        <input value="joao" autocomplete="name" size="10" placeholder="Primeiro nome"  type="text" name="nome" id="inome">
+       </div>
+       <div>
+        <label for="isobre">Sobrenome:</label>
+        <input autocomplete="family-name" size="10" placeholder="Último nome"  type="text" name="sobre" id="isobre">
+       </div>
+       <div>
+        <label for="iemail">E-mail:</label>
+        <input autocomplete="email" placeholder="e-mail principal"  type="email" name="email" id="iemail">
+       </div>
+       <div>
+        <label for="ipass">Senha:</label>
+        <input minlength="8" autocomplete="new-password" placeholder="mínimo de 8 caracteres"  type="password" name="pass" id="ipass" maxlength="20">
+       </div>
+       <div>
+        <label for="idia">Dia:</label>
+        <input value="2023-07-06"  type="date" name="dia" id="idia">
+       </div>
+       <div>
+        <label for="ihora">Horário:</label>
+        <input  type="time" name="hora" id="ihora">
+       </div> 
+       <div>
+        <input step=".005" min="0" max="5" type="number" name="num" id="inum">
+       </div>
+       <input type="submit" value="Send!">
+       <input type="reset" value="Borrarlo todo">
+
+      
+        
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
