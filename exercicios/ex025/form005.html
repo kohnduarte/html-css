@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        input { 
+            margin-bottom: 10px;
+        }
+
+        .bot {
+            padding: 4px 15px;
+            margin: 10px 5px 0 0; 
+        }
+
+        fieldset {
+            margin-bottom: 10px;
+        }
+
+        legend {
+            background-color: black;
+            color: #fff;
+            padding: 2px 5px 5px 5px;
+        }
+
+        div#subres {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="url-de-destino-dos-dados.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Gênero</legend>
+            <input type="radio" name="genero" id="imasc" checked>
+            <label for="imasc">Masculino</label>
+            <input type="radio" name="genero" id="ifem">
+            <label for="ifem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha seus esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="ifut" checked>
+            <label for="ifut">Futebol</label> <br>
+            <input type="checkbox" name="bas" id="ibas">
+            <label for="ibas">Basquete</label> <br>
+            <input type="checkbox" name="vol" id="ivol">
+            <label for="ivol">Vôlei</label> <br>
+            <input type="checkbox" name="nat" id="inat">
+            <label for="inat">Natação</label> <br>
+            <input type="checkbox" name="ten" id="iten" checked>
+            <label for="iten">Tênis</label> <br>
+            <input type="checkbox" name="f1" id="if1">
+            <label for="if1">Fórmula 1</label> <br>
+        </fieldset>
+
+
+
+
+
+        <div id="subres">
+            <input type="submit" value="Enviar" class="bot">
+            <input type="reset" value="Redefinir" class="bot">
+        </div>
+    </form>
+</body>
+</html>
