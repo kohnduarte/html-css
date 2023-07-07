@@ -10,7 +10,7 @@
 <body>
     <h1>Praticando formulário HTML e outras coisas mais</h1>
 
-    <form action="destino-dos-dados.php" method="post" autocomplete="off">
+    <form action="destino-dos-dados.php" method="get" autocomplete="off">
        <div>
         <label for="inome">Nome:</label>
         <input value="joao" autocomplete="name" size="10" placeholder="Primeiro nome"  type="text" name="nome" id="inome">
@@ -25,7 +25,7 @@
        </div>
        <div>
         <label for="ipass">Senha:</label>
-        <input minlength="8" autocomplete="new-password" placeholder="mínimo de 8 caracteres"  type="password" name="pass" id="ipass" maxlength="20">
+        <input required minlength="8" autocomplete="new-password" placeholder="mínimo de 8 caracteres"  type="password" name="pass" id="ipass" maxlength="20">
        </div>
        <div>
         <label for="idia">Dia:</label>
