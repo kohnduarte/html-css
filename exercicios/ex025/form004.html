@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: 'Fira Sans';
+        }
+
         div {
             margin-bottom: 1em;
         }
@@ -29,20 +35,21 @@
             <legend>Dados Pessoais</legend>
             <div>
                 <label for="iname">Nome</label>
-                <input type="text" name="name" id="iname">
+                <input type="text" name="name" id="iname" autocomplete="name"  minlength="3">
             </div>
             <div>
                 <label for="iemail">E-mail</label>
-                <input type="email" name="email" id="iemail">
+                <input type="email" name="email" id="iemail" autocomplete="email" >
             </div>
             <div>
                 <label for="itel">Telefone</label>
-                <input type="tel" name="tel" id="itel">
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required placeholder="(xx)xxxx-xxxx" pattern="^\(\d{2}\)\d{4}-[0-9]{4}$" title="Ex: (21)1234-5678">
+                <!-- Estudar sobre RegExp (Expressões Regulares) -->
             </div>
         </fieldset>
 
         <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
+        <input type="reset" value="Redefinir">
 
 
 
