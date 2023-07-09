@@ -19,6 +19,16 @@ div {
     margin-bottom: 10px;
 }
 
+div.general {
+    /*width: 54%;*/
+    /*text-align: right;*/
+}
+
+.general br + input {
+    /*display: block;*/
+    margin: 3px 0;
+}
+
 fieldset {
     margin-bottom: 10px;
     max-width: 500px;
