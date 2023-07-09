@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabado à noite</title>
+    <link rel="shortcut icon" href="01.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Preencha seus dados</h1>
+    <form action="informacoes-pessoais.php" method="post">
+        <fieldset>
+            <legend>Informações Gerais</legend>
+            <div>
+                <label for="iname">Nome:</label>
+                <input type="text" name="name" id="iname" size="10" minlength="2" maxlength="10" autocomplete="name" placeholder="primeiro nome">
+            </div>
+            
+            <div>
+                <label for="isobre">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobre" size="10">
+            </div>
+            <div>
+                <label for="idate">Data de Nascimento:</label>
+                <input type="date" name="birth-date" id="idate">
+            </div>
+            <div>
+                <label for="iweight">Peso:</label>
+                <input type="number" name="weight" id="iweight" min="0" max="500" placeholder="kg">
+            </div>
+            <div>
+                <label for="iheight">Altura:</label>
+                <input type="number" name="height" id="iheight" min="0" max="2.5" step=".01" placeholder="m">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gênero</legend>
+            <input type="radio" name="genero" id="imasc" value="Male">
+            <label for="imasc">Masculino</label> <br>
+            <input type="radio" name="genero" id="ifem" value="Female">
+            <label for="ifem">Feminino</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esportes-favoritos" id="fut" value="futebol">
+            <label for="fut">Futebol</label> <br>
+            <input type="checkbox" name="esportes-favoritos" id="vol" value="volei">
+            <label for="vol">Vôlei</label> <br>
+            <input type="checkbox" name="esportes-favoritos" id="bas" value="basquete">
+            <label for="bas">Basquete</label> <br>
+            <input type="checkbox" name="esportes-favoritos" id="nat" value="natacao">
+            <label for="nat">Natação</label> <br>
+            <input type="checkbox" name="esportes-favoritos" id="f1" value="formula-1">
+            <label for="f1">Fórmula 1</label> <br>
+            <input type="checkbox" name="esportes-favoritos" id="outros" value="other">
+            <label for="outros">Outros</label>
+        </fieldset>
+
+
+        Tipo de Música:
+
+
+
+
+
+        <div class="finish">
+            <input type="submit" value="Enviar" class="finishb">
+            <input type="reset" value="Redefinir" class="finishb">
+        </div>
+
+    </form>
+    
+    
+</body>
+</html>
