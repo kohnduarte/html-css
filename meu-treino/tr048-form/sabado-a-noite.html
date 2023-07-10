@@ -15,12 +15,12 @@
             <div class="general">
                 <label for="iname">Nome</label> <br>
                 <input type="text" name="name" id="iname" size="10" minlength="2" maxlength="10" autocomplete="name" placeholder="primeiro nome" pattern="[A-Za-z]{2,10}" autofocus>
-                <!-- nesse caso, os atributos 'minlength' e 'maxlength' não são necessários, pois eu já determino os comprimentos mínimo e máximo no atributo 'pattern'-->
+                <!-- nesse caso, os atributos 'minlength' e 'maxlength' não são necessários, pois eu já determino os comprimentos mínimo e máximo no atributo 'pattern'. Dito isso, 'maxlength' impede que o conteúdo cresça -->
             </div>
             
             <div class="general">
                 <label for="isobre">Sobrenome</label> <br>
-                <input type="text" name="sobrenome" id="isobre" size="10" minlength="4">
+                <input type="text" name="sobrenome" id="isobre" size="10" minlength="4" pattern="[A-Za-z]{4,20}" maxlength="20">
             </div>
             <div class="general">
                 <label for="idate">Data de Nascimento</label> <br>
@@ -61,8 +61,47 @@
         </fieldset>
 
 
-        Tipo de Música
-        Séries Favoritas
+        <fieldset>
+        <!-- agrupa um conjunto de controles e rótulos, definindo uma seção dentro do formulário -->    
+            <legend>Tipo de Música</legend>
+            <input type="checkbox" name="fav-music" id="irock" value="rock">
+            <label for="irock">Rock</label> <br>
+            <input type="checkbox" name="fav-music" id="ipop" value="pop">
+            <label for="ipop">Pop</label> <br>
+            <input type="checkbox" name="fav-music" id="ipag" value="pagode">
+            <label for="ipag">Pagode</label> <br>
+            <input type="checkbox" name="fav-music" id="isamba" value="samba">
+            <label for="isamba">Samba</label> <br>
+            <input type="checkbox" name="fav-music" id="ihh" value="hip-hop">
+            <label for="ihh">Hip Hop</label> <br>
+            <input type="checkbox" name="fav-music" id="ifunk" value="funk">
+            <label for="ifunk">Funk</label> <br>
+            <input type="checkbox" name="fav-music" id="iother" value="other">
+            <label for="iother">Outros</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Séries Favoritas</legend>
+            <input type="checkbox" name="fav-series" id="mando" value="the-mandalorian">
+            <label for="mando">The Mandalorian</label> <br>
+            <input type="checkbox" name="fav-series" id="pb" value="peaky-blinders">
+            <label for="pb">Peaky Blinders</label> <br>
+            <input type="checkbox" name="fav-series" id="soa" value="sons-of-anarchy">
+            <label for="soa">Sons Of Anarchy</label> <br>
+            <input type="checkbox" name="fav-series" id="got" value="game-of-thrones">
+            <label for="got">Game Of Thrones</label> <br>
+            <input type="checkbox" name="fav-series" id="bb" value="breaking-bad">
+            <label for="bb">Breaking Bad</label> <br>
+            <input type="checkbox" name="fav-series" id="sp" value="snowpiercer">
+            <label for="sp">Snowpiercer</label> <br>
+            <input type="checkbox" name="fav-series" id="tp" value="the-punisher">
+            <label for="tp">The Punisher</label> <br>
+            <input type="checkbox" name="fav-series" id="ys" value="yellowstone">
+            <label for="ys">Yellowstone</label> <br>
+            <input type="checkbox" name="fav-series" id="ts" value="the-sopranos">
+            <label for="ts">The Sopranos</label>
+        </fieldset>
 
         
 
