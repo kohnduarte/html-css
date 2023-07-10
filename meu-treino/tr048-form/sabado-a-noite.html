@@ -14,12 +14,13 @@
             <legend>Informações Gerais</legend>
             <div class="general">
                 <label for="iname">Nome</label> <br>
-                <input type="text" name="name" id="iname" size="10" minlength="2" maxlength="10" autocomplete="name" placeholder="primeiro nome">
+                <input type="text" name="name" id="iname" size="10" minlength="2" maxlength="10" autocomplete="name" placeholder="primeiro nome" pattern="[A-Za-z]{2,10}" autofocus>
+                <!-- nesse caso, os atributos 'minlength' e 'maxlength' não são necessários, pois eu já determino os comprimentos mínimo e máximo no atributo 'pattern'-->
             </div>
             
             <div class="general">
                 <label for="isobre">Sobrenome</label> <br>
-                <input type="text" name="sobrenome" id="isobre" size="10">
+                <input type="text" name="sobrenome" id="isobre" size="10" minlength="4">
             </div>
             <div class="general">
                 <label for="idate">Data de Nascimento</label> <br>
@@ -27,11 +28,11 @@
             </div>
             <div class="general">
                 <label for="iweight">Peso</label> <br>
-                <input type="number" name="weight" id="iweight" min="0" max="500" placeholder="kg">
+                <input type="number" name="weight" id="iweight" min="0" max="500" placeholder="kg" title="entre 0 e 500kg">
             </div>
             <div class="general">
                 <label for="iheight">Altura</label> <br>
-                <input type="number" name="height" id="iheight" min="0" max="2.5" step=".01" placeholder="m">
+                <input type="number" name="height" id="iheight" min="0" max="2.5" step=".01" placeholder="ex: 1,75">
             </div>
         </fieldset>
 
