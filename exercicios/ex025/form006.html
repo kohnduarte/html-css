@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: .9em;
+        }
+
+        .finish {
+            padding: 4px 8px;
+        }
+
+        div {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div>
+            <label for="icolor">Cor:</label>
+            <input type="color" name="color" id="icolor" value="#a2dcff">
+        </div>
+
+        <div>
+            <label for="inivel">Nível de Satisfação:</label>
+            <input type="range" name="nivel" id="inivel" min="-10" max="10" step=".005" value="32">
+        </div>
+
+        <div>
+            <label for="iphoto">Foto do Perfil:</label>
+            <input type="file" name="photo" id="iphoto">
+        </div>
+
+
+        <div>
+            <input type="submit" value="Enviar" class="finish">
+            <input type="reset" value="Redefinir" class="finish">
+            <!-- 'reset' é voltar aos valores iniciais, redefinir -->
+        </div>
+    </form>
+    
+</body>
+</html>
