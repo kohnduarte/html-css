@@ -29,6 +29,10 @@ div.general {
     margin: 3px 0;
 }
 
+br + select {
+    margin: 3px 0;
+}
+
 fieldset {
     margin-bottom: 10px;
     max-width: 500px;

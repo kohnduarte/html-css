@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sábado à noite</title>
+    <title>Formulário</title>
     <link rel="shortcut icon" href="01.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -38,15 +38,68 @@
 
         <fieldset>
             <legend>Gênero</legend>
-            <input type="radio" name="genero" id="imasc" value="Male">
+            <input type="radio" name="genero" id="imasc" value="Male" checked>
             <label for="imasc">Masculino</label> <br>
             <input type="radio" name="genero" id="ifem" value="Female">
             <label for="ifem">Feminino</label>
         </fieldset>
+
+        <fieldset>
+            <legend>Localização</legend>
+            <div>
+                <label for="est">Estado</label> <br>
+                <select name="estado" id="est">
+                    <option value="">---Escolha---</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="rj" selected>RJ</option>
+                        <option value="sp">SP</option>
+                        <option value="mg">MG</option>
+                        <option value="es">ES</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="pr">PR</option>
+                        <option value="sc">SC</option>
+                        <option value="rs">RS</option>
+                    </optgroup>
+                    <optgroup label="Região Centro-Oeste">
+                        <option value="go">GO</option>
+                        <option value="mt">MT</option>
+                        <option value="ms">MS</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="ma">MA</option>
+                        <option value="pi">PI</option>
+                        <option value="ce">CE</option>
+                        <option value="rn">RN</option>
+                        <option value="pb">PB</option>
+                        <option value="pe">PE</option>
+                        <option value="al">AL</option>
+                        <option value="se">SE</option>
+                        <option value="ba">BA</option>
+                    </optgroup>
+                    <optgroup label="Região Norte">
+                        <option value="ac">AC</option>
+                        <option value="ap">AP</option>
+                        <option value="pa">PA</option>
+                        <option value="ro">RO</option>
+                        <option value="rr">RR</option>
+                        <option value="to">TO</option>
+                        <option value="am">AM</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="general">
+                <label for="city">Cidade</label> <br>
+                <input type="text" name="cidade" id="city" pattern="[A-Z a-z]{3,30}" size="9" maxlength="30" value="Rio de Janeiro">
+                <!-- '[A-Za-z]' permite APENAS letras, sem espaços
+                
+                Já '[A-Z a-z]' permite espaços -->
+            </div>
+        </fieldset>
         
         <fieldset>
             <legend>Esportes Favoritos</legend>
-            <input type="checkbox" name="esportes-favoritos" id="fut" value="futebol">
+            <input type="checkbox" name="esportes-favoritos" id="fut" value="futebol" checked>
             <label for="fut">Futebol</label> <br>
             <input type="checkbox" name="esportes-favoritos" id="vol" value="volei">
             <label for="vol">Vôlei</label> <br>
@@ -64,7 +117,7 @@
         <fieldset>
         <!-- agrupa um conjunto de controles e rótulos, definindo uma seção dentro do formulário -->    
             <legend>Tipo de Música</legend>
-            <input type="checkbox" name="fav-music" id="irock" value="rock">
+            <input type="checkbox" name="fav-music" id="irock" value="rock" checked>
             <label for="irock">Rock</label> <br>
             <input type="checkbox" name="fav-music" id="ipop" value="pop">
             <label for="ipop">Pop</label> <br>
@@ -83,7 +136,7 @@
 
         <fieldset>
             <legend>Séries Favoritas</legend>
-            <input type="checkbox" name="fav-series" id="mando" value="the-mandalorian">
+            <input type="checkbox" name="fav-series" id="mando" value="the-mandalorian" checked>
             <label for="mando">The Mandalorian</label> <br>
             <input type="checkbox" name="fav-series" id="pb" value="peaky-blinders">
             <label for="pb">Peaky Blinders</label> <br>
@@ -103,6 +156,22 @@
             <label for="ts">The Sopranos</label> <br>
             <input type="checkbox" name="fav-series" id="outras" value="other">
             <label for="outras">Outras</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Cor Favorita</legend>
+            <input type="color" name="fav-color" id="color" value="#5b3eff">
+        </fieldset>
+
+        <fieldset>
+            <legend>De 0 a 100, qual é o seu nível de satisfação com a vida?</legend>
+            <input type="range" name="life-satisf" id="range" min="0" max="100" step=".01" value="100">
+            <!-- 'range'= variar, variação -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolha um arquivo</legend>
+            <input type="file" name="file" id="file">
         </fieldset>
 
         
