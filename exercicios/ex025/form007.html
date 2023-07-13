@@ -15,25 +15,50 @@
         }
 
         div {
-            margin-bottom: 1em;
+            margin-bottom: 1.2em;
+        }
+
+        br + .jl {
+            margin-top: 5px;
+        }
+
+        label {
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
 <form action="cadastro.php" method="get" autocomplete="on">
-    <label for="iest">Estado:</label>
-    <select name="estado" id="iest">
-        <option value="">--- Escolha ---</option>
-        <optgroup label="Região Sudeste">
-            <option value="rj">RJ</option>
-            <option value="sp">SP</option>
-            <option value="mg">MGe</option>
-            <option value="es">ES</option>
-        </optgroup>
+    <div>
+        <label for="iest">Estado</label> <br>
+        <select name="estado" id="iest" class="jl">
+            <option value="">--- Escolha ---</option>
+            <optgroup label="Região Sudeste">
+                <option value="rj">RJ</option>
+                <option value="sp">SP</option>
+                <option value="mg">MGe</option>
+                <option value="es">ES</option>
+            </optgroup>
+        </select>
+    </div>
 
+    <!-- o elemento 'select' cria uma caixa de seleção que fornece opções pro visitante, mas e se a opção mais apropriada não estiver presente?
+    
+    é possível exibir uma lista de opções em um controle de texto através do elemento 'datalist'
+    -->
 
-    </select>
+    <div><label for="prof">Profissão</label> <br>
+        <input type="text" name="job" id="prof" class="jl" list="jobs">
+        <datalist id="jobs">            
+            <option>Professor</option>
+            <option>Desenvolvedor</option>           
+            <option>Engenheiro</option>
+            <option>Arquiteto</option>
+            <option>Médico</option>
+            <option>Veterinário</option>
+        </datalist>    
+    </div>
     
     
     
