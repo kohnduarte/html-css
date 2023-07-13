@@ -37,7 +37,7 @@
             <optgroup label="Região Sudeste">
                 <option value="rj">RJ</option>
                 <option value="sp">SP</option>
-                <option value="mg">MGe</option>
+                <option value="mg">MG</option>
                 <option value="es">ES</option>
             </optgroup>
         </select>
@@ -49,15 +49,24 @@
     -->
 
     <div><label for="prof">Profissão</label> <br>
-        <input type="text" name="job" id="prof" class="jl" list="jobs">
+        <input type="text" name="job" id="prof" class="jl" list="jobs" size="12">
         <datalist id="jobs">            
-            <option>Professor</option>
-            <option>Desenvolvedor</option>           
-            <option>Engenheiro</option>
-            <option>Arquiteto</option>
-            <option>Médico</option>
-            <option>Veterinário</option>
+            <option value="Desenvolvedor">
+            <option value="Professor">
+            <option value="Médico">
+            <option value="Veterinário">
+            <option value="Engenheiro">
+            <option value="Arquiteto">
+            <option value="Atleta">
+            <option value="Designer">
+            <option value="Enfermeiro">
+            <option value="Fisioterapeuta">
         </datalist>    
+    </div>
+
+    <div>
+        <label for="imsg">Mensagem</label> <br>
+        <textarea name="msg" id="imsg" cols="30" rows="10" class="jl" placeholder="Digite a sua mensagem aqui..." maxlength="100" style="resize: none"></textarea>
     </div>
     
     
