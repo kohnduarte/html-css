@@ -14,13 +14,13 @@
             <legend>Informações Gerais</legend>
             <div class="general">
                 <label for="iname">Nome</label> <br>
-                <input type="text" name="name" id="iname" size="10" minlength="2" maxlength="10" autocomplete="name" placeholder="primeiro nome" pattern="[A-Za-z]{2,10}" autofocus>
+                <input type="text" name="name" id="iname" size="10" minlength="2" maxlength="10" autocomplete="name" placeholder="primeiro nome" pattern="[A-Za-z]{2,10}" autofocus disabled>
                 <!-- nesse caso, os atributos 'minlength' e 'maxlength' não são necessários, pois eu já determino os comprimentos mínimo e máximo no atributo 'pattern'. Dito isso, 'maxlength' impede que o conteúdo cresça -->
             </div>
             
             <div class="general">
                 <label for="isobre">Sobrenome</label> <br>
-                <input type="text" name="sobrenome" id="isobre" size="10" minlength="4" pattern="[A-Za-z]{4,20}" maxlength="20">
+                <input type="text" name="sobrenome" id="isobre" size="10" minlength="4" pattern="[A-Za-z]{4,20}" maxlength="20" disabled>
             </div>
             <div class="general">
                 <label for="idate">Data de Nascimento</label> <br>
@@ -53,7 +53,7 @@
             <legend>Localização</legend>
             <div>
                 <label for="est">Estado</label> <br>
-                <select name="estado" id="est">
+                <select name="estado" id="est" multiple size="5">
                     <option value="">---Escolha---</option>
                     <optgroup label="Região Sudeste">
                         <option value="rj" selected>RJ</option>
@@ -67,11 +67,11 @@
                         <option value="rs">RS</option>
                     </optgroup>
                     <optgroup label="Região Centro-Oeste">
-                        <option value="go">GO</option>
+                        <option value="go" disabled>GO</option>
                         <option value="mt">MT</option>
                         <option value="ms">MS</option>
                     </optgroup>
-                    <optgroup label="Região Nordeste">
+                    <optgroup label="Região Nordeste" disabled>
                         <option value="ma">MA</option>
                         <option value="pi">PI</option>
                         <option value="ce">CE</option>
@@ -165,7 +165,7 @@
 
         <fieldset>
             <legend>Cor Favorita</legend>
-            <input type="color" name="fav-color" id="color" value="#5b3eff">
+            <input type="color" name="fav-color" id="color" value="#5b3eff" disabled>
         </fieldset>
 
         <fieldset>
