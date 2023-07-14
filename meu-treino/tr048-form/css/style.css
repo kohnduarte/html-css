@@ -33,8 +33,7 @@ br + select {
     margin: 3px 0;
 }
 
-fieldset {
-    margin-bottom: 10px;
+fieldset {    
     max-width: 500px;
     margin: 0 auto 10px auto;
 }
@@ -60,5 +59,17 @@ input + input {
 
 input:invalid {
     background-color: rgb(217, 109, 109);
+}
+
+textarea {
+    display: block;
+    resize: none;
+    width: 90%;
+    margin: 10px auto;
+    height: 150px;
+    border: 1px solid;
+    box-shadow: -1px -1px 6px -2px #000;
+    border-radius: 4px;
+    letter-spacing: .1em;
 }
 
