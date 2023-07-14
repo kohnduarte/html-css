@@ -73,3 +73,7 @@ textarea {
     letter-spacing: .1em;
 }
 
+textarea:invalid {
+    background-color: rgb(217, 109, 109);
+}
+
