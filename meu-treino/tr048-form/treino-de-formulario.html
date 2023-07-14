@@ -188,8 +188,9 @@
 
         <fieldset>
             <legend>De 0 a 100, qual é o seu nível de satisfação com a vida?</legend>
-            <input type="range" name="life-satisf" id="range" min="0" max="100" step=".01" value="100">
+            <input type="range" name="life-satisf" id="range" min="0" max="100" step=".01" value="100" oninput="saida.innerHTML = Number(range.value)">
             <!-- 'range'= variar, variação -->
+            <output id="saida">100</output>
         </fieldset>
 
         <fieldset>
