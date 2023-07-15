@@ -77,3 +77,11 @@ textarea:invalid {
     background-color: rgb(217, 109, 109);
 }
 
+h2 {
+    font-size: 1.2em;
+}
+
+h2.calc {
+    margin-top: -0.1em;
+}
+

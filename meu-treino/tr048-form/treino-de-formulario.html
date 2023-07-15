@@ -199,6 +199,45 @@
         </fieldset>
 
         <fieldset>
+            <legend>Calculadora</legend>
+            <h2 class="calc">Soma</h2>
+            <!-- o elemento 'output' representa o resultado de um cálculo ou de uma ação do usuário -->
+            <input type="number" name="" id="c1" oninput="soma.innerHTML = Number(c1.value) + Number(c2.value)" step=".01">
+                            +
+            <input type="number" name="" id="c2" oninput="soma.innerHTML = Number(c1.value) + Number(c2.value)" step=".01">
+                            =
+            <output id="soma"></output>
+            <!-- nada do <output> é enviado junto com o formulário -->
+
+            <h2>Subtração</h2>
+            <input type="number" name="" id="c3" oninput="sub.innerHTML = Number(c3.value) - Number(c4.value)" step=".01">
+                            -
+            <input type="number" name="" id="c4" oninput="sub.innerHTML = Number(c3.value) - Number(c4.value)" step=".01">    
+                            =
+            <output id="sub"></output>
+
+            <h2>Multiplicação</h2>
+            <input type="number" name="" id="c5" oninput="mult.innerHTML = Number(c5.value) * Number(c6.value)" step=".01">
+                            x
+            <input type="number" name="" id="c6" oninput="mult.innerHTML = Number(c5.value) * Number(c6.value)" step=".01">
+                            =
+            <output id="mult"></output>
+
+            <h2>Divisão</h2>
+            <input type="number" name="" id="c7" oninput="divis.innerHTML = Number(c7.value) / Number(c8.value)" step=".01">
+                            /
+            <input type="number" name="" id="c8" oninput="divis.innerHTML = Number(c7.value) / Number(c8.value)" step=".01">
+                            =
+            <output id="divis"></output>
+ 
+
+
+
+
+
+        </fieldset>
+
+        <fieldset>
             <legend>Gostaria de deixar uma mensagem?</legend>
             <textarea name="message" id="msg" placeholder="Digite a sua mensagem aqui..."></textarea>
         </fieldset>
