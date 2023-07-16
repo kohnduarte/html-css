@@ -127,7 +127,9 @@
         <hr>
 
         <label for="birth">Em que ano você nasceu?</label>
-        <input type="number" name="" id="birth" min="1900">
+        <input type="number" name="" id="birth" min="1900" oninput="Myage()"> <br>
+        <label for="myage">Idade:</label>
+        <output id="myage">00</output>
         <!-- pode ser feito de duas maneiras:
              
             eu posso determinar o ano como sendo 2023, só que isso vai parar de funcionar no ano que vem
@@ -146,6 +148,13 @@
         function calcIdade() {
             let atual = new Date().getFullYear()
             age.innerHTML = Number(atual) - Number(ano.value)
+        }
+    </script>
+
+    <script>
+        function Myage() {
+            let anoatual = new Date().getFullYear()
+            myage.innerHTML = Number(anoatual) - Number(birth.value)
         }
     </script>
     
