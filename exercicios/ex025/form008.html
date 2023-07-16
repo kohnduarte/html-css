@@ -134,9 +134,21 @@
              
             eu posso determinar o ano como sendo 2023, só que isso vai parar de funcionar no ano que vem
             
-            ou eu posso colocar um código JavaScript pra selecionar o ano atual, que é o seguinte: new Date().getFullYear() -->
+            ou eu posso colocar um código JavaScript pra selecionar o ano atual, que é o seguinte: new Date().getFullYear()
 
+                        ----    -----       ----    ----
 
+            oninput="idout.innerHTML = Number(anoatual) - Number(birth.value)
+
+            nesse caso, eu só precisaria declarar o que é 'anoatual'
+
+            <script>
+                let anoatual = new Date().getFullYear()
+            </script>
+
+            nem sempre o fato de ser possível significa que está correto
+
+        -->
 
         <div id="endform">
             <input type="submit" value="Send">
