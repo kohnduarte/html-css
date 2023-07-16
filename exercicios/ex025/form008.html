@@ -61,6 +61,16 @@
                'input' localizado imediatamente após um 'label' irmão, que por sua vez está localizado imediatamente após um 'hr' irmão  */
         }
 
+        div#candy {
+            margin-top: 75px;
+        }
+
+        textarea {
+            resize: none;
+            letter-spacing: .1em;
+            width: 400px;
+        }
+
 
     </style>
 </head>
@@ -150,10 +160,56 @@
 
         -->
 
+        <div id="candy">
+            <label for="doce">Qual é o seu doce favorito?</label>
+            <input type="text" name="doce_favorito" id="doce" size="10" list="candy-list">
+            <datalist id="candy-list">
+                <option value="Sonho">
+                <option value="Quindim">
+                <option value="Brigadeiro">
+                <option value="Sorvete">
+                <option value="Bolo">
+                <option value="Pudim">
+            </datalist>
+        </div>
+
+        <select name="nome" id="iden">
+            <optgroup label="1">
+                <option value="a" disabled>a</option>
+                <option value="b">b</option>
+            </optgroup>
+            <optgroup label="2" disabled>
+                <option value="c">c</option>
+                <option value="d">d</option>
+            </optgroup>
+            <optgroup label="3">
+                <option value="e">e</option>
+                <option value="f" disabled>f</option>
+            </optgroup>
+            <optgroup label="4">
+                <option value="g">g</option>
+                <option value="h" disabled>h</option>
+            </optgroup>
+            <optgroup label="5" disabled>
+                <option value="i">i</option>
+                <option value="j">j</option>
+            </optgroup>
+        </select>
+
         <div id="endform">
             <input type="submit" value="Send">
             <input type="reset" value="Reset">
         </div>
+
+        <h2>Gostaria de deixar uma mensagem?</h2>
+
+        <textarea name="msg" id="msg" cols="10" rows="10" placeholder="Digite a sua mensagem aqui..." maxlength="5"></textarea>
+        <!-- Atenção! O número de caracteres de um 'textarea' é ilimitado! Certifique-se de estar utilizando 'method=post' e de dar uma reduzida nisso -->
+
+
+
+
+
     </form>
 
     <script>
