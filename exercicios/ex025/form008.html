@@ -29,10 +29,30 @@
         div#endform {
             margin-top: 75px;
         }
+
+        output {
+            background-color: antiquewhite;
+            border: 2px solid;
+            padding: 2px 5px;
+        }
+
+        input:invalid {
+            background-color: #f00;
+            /* quando um padrão ou formato é determinado em um controle, ele pode ser considerado válido ou inválido. É possível aplicar estilos nesses controles baseando-se no estado atual com as pseudo-classes ':valid' e ':invalid'
+            
+            alguns atributos que especificam padrões a serem seguidos: 
+            'min' 'max' 'minlength' 'maxlength' 'pattern' */
+        }
+
+
     </style>
 </head>
 <body>
     <h1>The <code>output</code> element</h1>
+    <!-- o elemento 'output' é utilizado para representar um cálculo ou uma ação do usuário
+    
+        nada do elemento 'output' é enviado junto com o formulário -->
+
     <h2>Somando os valores de 2 controles</h2>
     <form action="cadastro.php" method="get">
         <div>
@@ -51,6 +71,8 @@
 
         <h2>Mostrando um número em um controle <code>range</code></h2>
 
+        <!-- por padrão, o valor de um controle deslizante não é exibido -->
+
         <div>
             <label for="inum">Número:</label>
             <input type="range" name="num" id="inum" min="0" max="10" value="3" step=".01" oninput="val.innerHTML = Number(inum.value)">
@@ -66,7 +88,7 @@
 
         <div>
             <label for="age">Sua idade é:</label>
-            <output id="age"></output>
+            <output id="age">0</output>
         </div>
 
 
