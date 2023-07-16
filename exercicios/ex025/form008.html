@@ -50,6 +50,17 @@
             font-size: 1.5em;
         }
 
+        pre input {
+            width: 50px;
+        }
+
+        hr + label + input {
+            width: 50px;
+            /* seletor de irmãos adjacentes
+               adjacente = ao lado de, junto, pegado
+               'input' localizado imediatamente após um 'label' irmão, que por sua vez está localizado imediatamente após um 'hr' irmão  */
+        }
+
 
     </style>
 </head>
@@ -100,16 +111,28 @@
         <h2>Treino livre após a aula</h2>
 
         <pre>
+            <!-- É o atributo 'name' que identifica os dados na hora do envio. Se o 'name' de um controle não tiver valor, os dados desse controle não são enviados -->
+
             <input type="number" name="" id="c1" oninput="total.innerHTML = Number(c1.value) + Number(c2.value) - Number(c3.value) / Number(c4.value)"> <br>
-                          + <br>
+                 + <br>
             <input type="number" name="" id="c2" oninput="total.innerHTML = Number(c1.value) + Number(c2.value) - Number(c3.value) / Number(c4.value)"> <br>
-                          - <br>
+                 - <br>
             <input type="number" name="" id="c3" oninput="total.innerHTML = Number(c1.value) + Number(c2.value) - Number(c3.value) / Number(c4.value)"> <br>
-                          / <br>
+                 / <br>
             <input type="number" name="" id="c4" oninput="total.innerHTML = Number(c1.value) + Number(c2.value) - Number(c3.value) / Number(c4.value)"> <br>
-                          = <br>
-                         <output id="total">0</output>
+                 = <br>
+               <output id="total">0</output>
         </pre>
+
+        <hr>
+
+        <label for="birth">Em que ano você nasceu?</label>
+        <input type="number" name="" id="birth" min="1900">
+        <!-- pode ser feito de duas maneiras:
+             
+            eu posso determinar o ano como sendo 2023, só que isso vai parar de funcionar no ano que vem
+            
+            ou eu posso colocar um código JavaScript pra selecionar o ano atual, que é o seguinte: new Date().getFullYear() -->
 
 
 
