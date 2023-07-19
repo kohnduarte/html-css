@@ -67,8 +67,9 @@
 
         textarea {
             resize: none;
-            letter-spacing: .1em;
+            letter-spacing: .1em; /* kerning */
             width: 400px;
+            margin-bottom: 50px;
         }
 
 
@@ -210,6 +211,29 @@
 
 
 
+    </form>
+
+    <!-- abaixo há uma outra forma de se escrever 
+    
+    1- o atributo 'oninput' é colocado no elemento 'form', o que é bom, pois não é necessário colocá-lo em todos os controles que participam do cálculo
+
+    2- o elemento 'output' é selecionado pelo 'name' e não pelo 'id'
+
+    3 - o atributo 'for' no elemento 'output' especifica os 'ids' dos controles que estão participando do cálculo(devem ser separados por espaço)
+
+    4- '.innerHTML' pode ser '.value'
+
+    5- 'Number' pode ser 'parseInt'
+
+    6- todos os espaços foram eliminados    
+    
+    -->
+
+    <form action="" oninput="total.value=parseInt(a.value)+parseInt(b.value)">
+
+        <input type="number" name="bla" id="a"> + <br>
+        <input type="number" name="blaa" id="b"> =  
+        <output name="total" for="a b"></output>
     </form>
 
     <script>
