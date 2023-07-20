@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* Estilo para papel */
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+menu {
+    display: none;
+}
+
+main::after {
+    content: 'Versão para impressão. Conteúdo completo em https://github.com/kohnduarte';
+    font-size: 0.8em;
+}

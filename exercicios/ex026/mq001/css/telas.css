@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* Estilo para telas */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+}
