@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* Configurações Gerais */
+
+body {
+    font: 0.9em Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-weight: normal;
+}
