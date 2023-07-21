@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* Versão Mobile First, que significa o desenvolvimento de sites com o foco em dispositivos móveis */
+
+* {
+    /* seletor universal, os estilos aqui declarados são aplicados a todos os elementos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* a propriedade 'box-sizing' determina se a largura e altura especificadas se referem apenas ao conteúdo do elemento (padrão) ou ao conteúdo, padding e borda */
+}
+
+body {
+    background: #000 url('../img/back-phone.jpg') fixed center/cover;
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100vh;*/
+}
+
+main {
+    background-color: #ffffffc9;
+    width: 90vw;
+    margin: 20px auto 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000000b2;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+img#tablet {display: none;}
+img#pc {display: none;}
+img#tv {display: none;}
+img#print {display: none;}
