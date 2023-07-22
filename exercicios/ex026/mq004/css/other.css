@@ -23,10 +23,7 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
     img#phone {display: none;}
     img#tablet {display: block;}
-    img#pc {display: none;}
-    img#tv {display: none;}
-    img#print {display: none;}
-
+    
     body {
         background-image: url('../img/back-tablet.jpg');
     }
@@ -36,11 +33,8 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     img#phone {display: none;}
-    img#tablet {display: none;}
     img#pc {display: block;}
-    img#tv {display: none;}
-    img#print {display: none;}
-
+    
     body {
         background-image: url('../img/back-pc.jpg');
     }
@@ -50,10 +44,7 @@
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
     img#phone {display: none;}
-    img#tablet {display: none;}
     img#pc {display: block;}
-    img#tv {display: none;}
-    img#print {display: none;}
 
     body {
         background-image: url('../img/back-pc.jpg');
@@ -64,11 +55,8 @@
 
 @media screen and (min-width: 1201px) {
     img#phone {display: none;}
-    img#tablet {display: none;}
-    img#pc {display: none;}
     img#tv {display: block;}
-    img#print {display: none;}
-
+    
     body {
         background-image: url('../img/back-tv.jpg');
     }
@@ -76,9 +64,6 @@
 
 @media print {
     img#phone {display: none;}
-    img#tablet {display: none;}
-    img#pc {display: none;}
-    img#tv {display: none;}
     img#print {display: block;}
 
     h1 {
