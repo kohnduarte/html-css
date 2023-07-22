@@ -73,3 +73,15 @@
         background-image: url('../img/back-tv.jpg');
     }
 }
+
+@media print {
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+    img#print {display: block;}
+
+    h1 {
+    color: #000;
+    }
+}
