@@ -1,7 +1,13 @@
 @charset "UTF-8";
 
+/* Estilos Gerais com foco no desenvolvimento para dispositivos móveis */
+
 * {
     margin: 0;
+}
+
+:root {
+    --cor01: #919191;
 }
 
 body {
@@ -10,8 +16,8 @@ body {
 }
 
 header {
-    background: rgb(145, 145, 145);
-    padding: 9px 9px 9px 0px;
+    background: var(--cor01);
+    padding: 9px 0px 0px 0px;
 }
 
 h1 {
@@ -20,17 +26,25 @@ h1 {
 }
 
 nav a {
+    display: block;
+    text-align: center;
     background-color: rgb(111, 111, 111);
     color: #fff;
     text-decoration: none;
     padding: 10px;
 }
 
+nav a:nth-child(n+2) {
+    border-top: 1px solid var(--cor01);
+}
+
 nav a:hover {
     text-decoration: underline;
+    background-color: var(--cor01);
 }
 
 main {
+    width: 90vw;
     max-width: 700px;
     margin: 10px auto 0 auto;
     border-radius: 10px;
