@@ -32,10 +32,7 @@ nav a {
     color: #fff;
     text-decoration: none;
     padding: 10px;
-}
-
-nav a:nth-child(n+2) {
-    border-top: 1px solid var(--cor01);
+    border-top: 2px solid var(--cor01);
 }
 
 nav a:hover {
