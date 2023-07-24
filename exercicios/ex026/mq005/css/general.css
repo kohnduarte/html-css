@@ -33,9 +33,7 @@ h1 {
     padding: 10px;
 }
 
-.material-symbols-outlined:hover {
-    background-color: #fff;
-    color: #000;
+.material-symbols-outlined {
     cursor: pointer;
 }
 
