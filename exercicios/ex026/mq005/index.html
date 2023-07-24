@@ -11,8 +11,8 @@
 <body>
     <header>
         <h1>Meu site</h1>
-        <span class="material-symbols-outlined">menu</span>
-        <nav>
+        <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav id="navig">
             <a href="">Opção 1</a>
             <a href="">Opção 2</a>
             <a href="">Opção 3</a>
@@ -29,6 +29,16 @@
 
         </article>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (navig.style.display == 'block') {
+                navig.style.display = 'none'
+            } else {
+                navig.style.display = 'block'
+            }
+        }
+    </script>
     
 </body>
 </html>
