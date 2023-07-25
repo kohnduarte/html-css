@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/general.css"> <!-- est. geral-->
     <link rel="stylesheet" href="css/m-q.css"> <!-- media queries -->
 </head>
-<body>
+<body onresize="tamJanela()">
     <header>
         <h1>Meu site</h1>
         <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -31,6 +31,14 @@
     </main>
 
     <script>
+        function tamJanela() {
+            if (window.innerWidth >= 481) {
+                navig.style.display = 'block'
+            } else {
+                navig.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (navig.style.display == 'block') {
                 navig.style.display = 'none'
