@@ -11,3 +11,10 @@ h1 {
 form {
     display: none;
 }
+
+@media print {
+    h1 {
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+}
