@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino Livre</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/general.css">
+</head>
+<body onresize="redimJan()">
+    <h1 id="tit" onclick="showForm()">Calculadora</h1>
+    <form id="formu" action="destino-dos-dados.php" method="get" autocomplete="off">
+        <input type="number" name="" id="c1" oninput="total.innerHTML = Number(c1.value) + Number(c2.value)">
+        +
+        <input type="number" name="" id="c2" oninput="total.innerHTML = Number(c1.value) + Number(c2.value)">
+        = <output id="total"></output> <br>
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <script>
+        function redimJan() {
+            if (window.innerWidth <= 600) {
+                tit.style.color = 'red'
+            } else {
+                tit.style.color = 'green'
+            }
+        }
+
+
+
+        function showForm() {
+            if (formu.style.display == 'none') {
+                formu.style.display = 'block'
+            } else {
+                formu.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
