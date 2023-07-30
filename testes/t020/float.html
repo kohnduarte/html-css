@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font: .9em system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        header {
+            background-color: rgb(184, 210, 210);
+            padding: 10px;
+            border: 2px solid;
+            margin-bottom: 10px;
+        }
+
+        main {
+            background-color: blanchedalmond;
+            padding: 20px;
+            border: 2px solid;
+        }
+
+        article#a1 {
+            background-color: rgb(195, 171, 217);
+            padding: 10px;
+        }
+
+        p + p {
+            /* seletor de irmãos adjacentes, todo 'p' localizado imediatamente após um 'p' irmão */
+            margin-top: 1em;
+        }
+
+        article#a2 {
+            background-color: rgb(205, 228, 182);
+            padding: 10px;
+        }
+
+        article {
+            border: 2px solid;
+            margin-bottom: 10px;
+        }
+
+
+
+        aside {
+            background-color: rgb(199, 197, 197);
+            padding: 10px;
+            border: 2px solid;
+        }
+
+        footer {
+            background-color: darkorange;
+            padding: 10px;
+            border: 2px solid;
+            margin-top: 10px;
+        }
+
+        span {
+            float: left;
+            font-size: 3em;
+            width: 30px;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+                    <!-- :::: HEADER :::: -->
+    <header>
+        <!-- 'header' especifica um conteúdo introdutório -->
+        <h1>A propriedade <code>float</code></h1>
+    </header>
+                    <!-- :::: MAIN CONTENT :::: -->
+    <main>        
+        <article id="a1">
+            <!-- 'article' especifica um conteúdo independente, autossuficiente, que faz sentido por si só -->
+            <p><span>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Iusto laborum nam magnam minima voluptas, minus quam nulla, numquam quia, incidunt aspernatur consectetur officia? Tempora non quibusdam mollitia, aspernatur deleniti assumenda nam aliquam ipsa sequi reprehenderit dolor adipisci ullam repudiandae officiis beatae aut voluptates praesentium veniam commodi odio autem accusantium doloremque.</p>
+            <p>Rerum officia quam, laudantium quod eum eaque soluta. Assumenda eaque laborum mollitia. Quibusdam eos, odit blanditiis praesentium ipsum, molestias, ea temporibus earum voluptatum placeat dolorem hic ut voluptas odio quos minima vel inventore impedit. Placeat asperiores voluptates ipsa hic neque nemo quae, at ipsam deserunt qui saepe possimus laudantium dolores!</p>
+        </article>
+        <article id="a2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deleniti tempore ullam dolores, unde a quam ut, harum sapiente incidunt, dolor voluptatem dolorum ipsam! Doloribus veritatis error aspernatur consequatur facilis quis veniam quas totam praesentium exercitationem delectus libero nam fuga voluptatem fugiat, modi eaque molestias! Adipisci officiis perferendis at eos.</p>
+            <p>Nobis delectus, temporibus cupiditate ad sunt recusandae, velit placeat eligendi laboriosam qui dolor laborum sint voluptatum officia optio, suscipit ea aliquid! Similique reiciendis facere aspernatur dolores quisquam quo sunt nihil sed quis maxime adipisci accusamus placeat quia fugiat, necessitatibus magnam ratione ipsa ullam, cumque vero? Nihil culpa labore tempore veritatis.</p>
+            <p>Hic, animi optio asperiores atque fuga obcaecati, modi quod assumenda explicabo blanditiis quisquam aliquid facere magni laborum error. Recusandae fuga id libero voluptates dignissimos temporibus dolore laudantium vero nam, quaerat non natus hic reiciendis ducimus dolores, consectetur totam, beatae aperiam quas autem! Temporibus voluptate laborum magnam natus nostrum, deleniti quo.</p>
+        </article>
+        <aside>
+            <!-- 'aside' especifica um conteúdo periférico e complementar ao principal -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, magni alias sed ratione error aliquid, beatae molestiae perspiciatis, et quos maiores impedit corporis sit consequuntur ea harum mollitia? Aspernatur quod, eaque atque natus sint modi ut? Maiores at, ducimus qui rem cupiditate aspernatur esse consectetur rerum mollitia. Nam quam dolor cumque. Perspiciatis iure, consequuntur, voluptas saepe commodi fugiat nisi ullam corporis nostrum aperiam dolores porro iste numquam explicabo iusto asperiores. Error nemo dolorem totam excepturi quod ipsum accusamus enim eos sed corrupti, dolorum, blanditiis est exercitationem hic molestiae voluptatum ratione vitae aut repellat fuga! Quibusdam, porro. Accusantium rerum soluta necessitatibus.</p>
+        </aside>
+    </main>
+                    <!-- :::: FOOTER :::: -->
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, suscipit!</p>
+    </footer>
+    
+</body>
+</html>
