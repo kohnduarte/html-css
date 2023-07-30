@@ -22,6 +22,10 @@
             text-align: center;
         }
 
+        h1 {
+            cursor: pointer;
+        }
+
         main {
             background-color: blanchedalmond;
             padding: 20px;
@@ -104,10 +108,10 @@
                     <!-- :::: HEADER :::: -->
     <header>
         <!-- 'header' especifica um conteúdo introdutório -->
-        <h1>A propriedade <code>float</code></h1>
+        <h1 onclick="abc()">A propriedade <code>float</code></h1>
     </header>
                     <!-- :::: MAIN CONTENT :::: -->
-    <main>        
+    <main id="princ">        
         <article id="a1">
             <!-- 'article' especifica um conteúdo independente, autossuficiente, que faz sentido por si só -->
             <p><span>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Iusto laborum nam magnam minima voluptas, minus quam nulla, numquam quia, incidunt aspernatur consectetur officia? Tempora non quibusdam mollitia, aspernatur deleniti assumenda nam aliquam ipsa sequi reprehenderit dolor adipisci ullam repudiandae officiis beatae aut voluptates praesentium veniam commodi odio autem accusantium doloremque.</p>
@@ -136,5 +140,15 @@
         <div></div>
         <div class="pink"></div>
     </section>
+
+    <script>
+        function abc() {
+            if (princ.style.float == 'left') {
+                princ.style.float = 'none'
+            } else {
+                princ.style.float = 'left'
+            }
+        }
+    </script>
 </body>
 </html>
