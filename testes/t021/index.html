@@ -12,7 +12,7 @@
         }
 
         p {
-            width: 1000px;
+            width: 700px;
         }
 
         p:hover {
@@ -32,11 +32,42 @@
             transition: width 10s, height 1s;
             transition-timing-function: ease-out;
         }
+
+        div:focus-within {
+            /* a pseudoclasse ':focus-within' seleciona um elemento quando ele ou qualquer um de seus descendentes receber foco */
+            background-color: aqua;
+            border: 2px solid #f00;
+        }
+
     </style>
 </head>
-<body>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet culpa numquam rem laudantium perferendis accusantium ipsam explicabo maxime, dolorum est unde ipsa dolorem minus nisi! Harum reprehenderit neque nulla nisi temporibus. Sunt culpa, quam vel quae suscipit vero impedit asperiores repellendus repellat quas illo? Nam voluptatibus eum dolorem repellat consequuntur obcaecati error quae sint. Quas excepturi, saepe magnam dolorum fugiat nostrum, iste ut ratione, alias id pariatur. Iste aliquid tenetur atque consequatur ex illum maiores amet sit nulla dignissimos! Vitae quae, sint numquam, quibusdam in fugiat doloribus cupiditate iure deleniti perspiciatis repudiandae ipsam! Molestiae deleniti voluptatem nobis inventore, placeat cumque.</p>
+<body onresize="blabla()">
+    <p id="teste">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet culpa numquam rem laudantium perferendis accusantium ipsam explicabo maxime, dolorum est unde ipsa dolorem minus nisi! Harum reprehenderit neque nulla nisi temporibus. Sunt culpa, quam vel quae suscipit vero impedit asperiores repellendus repellat quas illo? Nam voluptatibus eum dolorem repellat consequuntur obcaecati error quae sint. Quas excepturi, saepe magnam dolorum fugiat nostrum, iste ut ratione, alias id pariatur. Iste aliquid tenetur atque consequatur ex illum maiores amet sit nulla dignissimos! Vitae quae, sint numquam, quibusdam in fugiat doloribus cupiditate iure deleniti perspiciatis repudiandae ipsam! Molestiae deleniti voluptatem nobis inventore, placeat cumque.</p>
 
-    <div></div>
+    <div onclick="bla()">
+        <a href="">rótulos</a> <br> <a href="">rótulos</a> <br> <a href="">rótulos</a> <br> <a href="">rótulos</a> <br> <a href="" >rótulos</a>
+    </div>
+
+    <script>
+        function bla() {
+            if(teste.style.display == 'block') {
+               teste.style.display = 'none' 
+            } else {
+               teste.style.display = 'block' 
+            }
+        }
+
+        function blabla() {
+            if(window.innerWidth >= 800) {
+               teste.style.display = 'none' 
+            } else {
+               teste.style.display = 'block' 
+            }
+
+    
+        }
+
+        
+    </script>
 </body>
 </html>
