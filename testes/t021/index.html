@@ -4,39 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <style>
-        p::first-letter {
+        p#teste::first-letter {
             font-size: 3em;
             float: left;
             margin-right: 10px;
         }
 
-        p {
+        p#teste {
             width: 700px;
         }
 
-        p:hover {
-            width: 150px;
-            transition-duration: 10s;
-        }
+        
 
-        div {
+        div#tst {
+            position: relative;
+            z-index: -3;
             background-color: aquamarine;
             width: 700px;
             height: 300px;
         }
 
-        div:hover {
+        div#tst:hover {
             width: 100px;
             height: 100px;
-            transition: width 10s, height 1s;
-            transition-timing-function: ease-out;
+            transition: width 2s, height 2s;
+            transition-timing-function: steps(5, end);
         }
 
-        div:focus-within {
+        div#tst:focus-within {
             /* a pseudoclasse ':focus-within' seleciona um elemento quando ele ou qualquer um de seus descendentes receber foco */
             background-color: aqua;
             border: 2px solid #f00;
+        }
+
+        div#ft {
+            position: relative;
+            z-index: -2;
+            background-color: chartreuse;
+            width: 100%;
+            height: 200px;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        li {
+            float: right;
+            margin-right: 25px;
+            margin-top: 8px;
+            
+        }
+
+        li.nmark {
+            list-style-type: none;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            position: relative;
+            z-index: -1;
+            /*clear: both;*/
+        }
+
+        form {
+            position: absolute;
+            top: 30px;
+            right: 39px;
+        }
+
+        div#ft p {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            width: 80%;
+            margin: 1em auto;
+            text-align: center;
         }
 
     </style>
@@ -44,8 +95,28 @@
 <body onresize="blabla()">
     <p id="teste">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet culpa numquam rem laudantium perferendis accusantium ipsam explicabo maxime, dolorum est unde ipsa dolorem minus nisi! Harum reprehenderit neque nulla nisi temporibus. Sunt culpa, quam vel quae suscipit vero impedit asperiores repellendus repellat quas illo? Nam voluptatibus eum dolorem repellat consequuntur obcaecati error quae sint. Quas excepturi, saepe magnam dolorum fugiat nostrum, iste ut ratione, alias id pariatur. Iste aliquid tenetur atque consequatur ex illum maiores amet sit nulla dignissimos! Vitae quae, sint numquam, quibusdam in fugiat doloribus cupiditate iure deleniti perspiciatis repudiandae ipsam! Molestiae deleniti voluptatem nobis inventore, placeat cumque.</p>
 
-    <div onclick="bla()">
+    <div id="tst" onclick="bla()">
         <a href="">rótulos</a> <br> <a href="">rótulos</a> <br> <a href="">rótulos</a> <br> <a href="">rótulos</a> <br> <a href="" >rótulos</a>
+    </div>
+
+    <div id="ft">
+        
+        <nav>
+            <ul>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+                <li class="nmark"><a href="">lorem</a></li>
+            </ul>
+        </nav>
+        <img src="../../meu-treino/tr008/logobbb23-300.png" alt="" width="250" height="100">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, odit! Lorem ipsum dolor sit amet.</p>
+        <form action="">
+            <span class="material-symbols-outlined">search</span>
+            <input type="search" name="" id="">
+            <input type="submit" value="Search">
+        </form>
     </div>
 
     <script>
