@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="number"] {
+            appearance: none;
+        }
+    </style>
+</head>
+<body onresize="abc()" id="bd">
+    <form action="" oninput="total.value = parseInt(c2.value) + parseInt(c3.value) - parseInt(c4.value)">
+        <label for="c1">ano de nascimento</label>
+        <input type="number" name="birth-year" id="c1" min="1900" max="2023" oninput="calcIdade()"> <br>
+        sua idade
+        <output id="age"></output> <br>
+        <input type="number" id="c2"> <br>
+        + <br>
+        <input type="number" id="c3"> <br>
+        - <br>
+        <input type="number" id="c4"> <br>
+        = <output name="total" for="c2 c3 c4"></output> <br>
+        <input type="range" min="1000" max="2000" name="" id="c5" oninput="range.value = parseInt(c5.value)">
+        <output name="range" for="c5"></output>
+    </form>
+
+    <h1 onclick="xyz()" style="cursor: pointer;">Clique em mim</h1>
+    
+    <script>
+        function calcIdade() {
+            let anoatual = new Date().getFullYear()
+            age.innerHTML = Number(anoatual) - Number(c1.value)
+        }
+
+        function abc() {
+            if(window.innerWidth >= 800) {
+               c5.style.display = 'none' 
+            } else {
+               c5.style.display = 'inline-block' 
+            }
+        }
+
+        function xyz() {
+            if(bd.style.color == 'black') {
+               bd.style.color = 'red' 
+            } else {
+               bd.style.color = 'black' 
+            }
+        }
+    </script>
+</body>
+</html>
